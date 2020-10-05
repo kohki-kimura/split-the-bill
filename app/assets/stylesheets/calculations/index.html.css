@@ -1,0 +1,101 @@
+/* 条件 */
+
+.calc-contents {
+  background-color: #4682b4;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100px;
+  padding: 100vh,100vw;
+}
+
+.calc-header {
+  padding: 5vh 0;
+  text-align: center;
+}
+
+.calc-main {
+  background-color: #FFF;
+  width: 90vw;
+  min-width: 450px;
+  padding: 10vh;
+  margin: 0 0 10vh 0;
+}
+
+.calc-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.total{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.total-payment {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.total-people {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* 条件 */
+
+/* 共通 */
+.indispensable {
+  color: #ea352d;
+  font-size: 10px;
+  font-weight: bold;
+}
+/* /共通 */
+
+
+/* 計算 */
+
+.group {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.group-text {
+  /* min-width: 170px; */
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.group-input {
+  width: 135px;
+  height: 30px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.indivisible-number{
+  padding: 50px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.space{
+  padding: 0 0 0 100px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* /計算 */
