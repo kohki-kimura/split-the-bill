@@ -5,7 +5,7 @@
   </header>
   <div class="calc-main">
    <%= form_with local: true do |f| %>
-   <div class="calc-title">条件を入力</div>
+   <div class="calc-title">情報を入力</div>
     <div class="total">
       <div class="total-payment">
         <span>総支払額</span>
@@ -34,7 +34,7 @@
             <span>人数</span>
           </div>
           <div class = "space">
-          <span id='hoge'></span>人
+          <span id='group-people-one'></span>人
           </div>
         </div>
         <div class="group">
@@ -42,7 +42,7 @@
             <span>価格</span>
           </div>
           <div class="space">
-            <span id='hoge'></span>円
+            <span id='group-price-one'></span>円
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@
       <div class="group-text">
          <span>価格</span>
          <span class="indispensable">※</span>
-         <%= f.text_field :hoge, class:"group-input", id:"group-price-two", placeholder:"例）10000" %>
+         <%= f.text_field :hoge, class:"group-input", id:"group-price-two", placeholder:"例）10000" %>円
       </div>
     </div>
 
