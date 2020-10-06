@@ -18,24 +18,38 @@
 
 .calc-main {
   background-color: #FFF;
-  width: 90vw;
+  width: 70vw;
   min-width: 450px;
   padding: 10vh;
   margin: 0 0 10vh 0;
 }
 
-.calc-title {
+.calc-title-one {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  padding: 30px 0;
+  padding: 10px 0;
+}
+
+.calc-title-two {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0 30px 0;
+}
+
+.calc-description{
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .total{
-  padding: 10px;
+  padding: 10px 10px 30px 10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-bottom: 5px solid #4682b4;
 }
 
 .total-payment {
@@ -60,6 +74,14 @@
   font-size: 10px;
   font-weight: bold;
 }
+
+.indispensable-description {
+  color: #ea352d;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+}
 /* /共通 */
 
 
@@ -70,12 +92,29 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* border-bottom: 1px solid #ccc; */
+}
+
+.group-one {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .group-text {
-  /* min-width: 170px; */
+  padding: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+
+.group-text-one {
+  width: 200px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   border-bottom: 1px solid #ccc;
 }
 
@@ -86,15 +125,20 @@
   padding-right: 10px;
 }
 
-.indivisible-number{
-  padding: 50px 10px 10px;
+
+.group-invisible {
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.space{
-  padding: 0 0 0 100px;
+.indivisible-number{
+  width: 200px;
+  padding: 50px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   border-bottom: 1px solid #ccc;
 }
 

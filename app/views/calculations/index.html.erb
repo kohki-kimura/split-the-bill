@@ -5,8 +5,8 @@
   </header>
   <div class="calc-main">
    <%= form_with local: true do |f| %>
-   <div class="calc-title">情報を入力</div>
-    <div class="total">
+   <div class="calc-title-one">情報を入力</div>
+   <div class="total">
       <div class="total-payment">
         <span>総支払額</span>
         <span class="indispensable">※</span>
@@ -18,7 +18,10 @@
          <%= f.text_field :hoge, class:"total-people", id:"total-people", placeholder:"例）5" %>人
       </div>
     </div>
-      <div class="calc-title">計算を入力</div>
+      <div class="calc-title-two">計算を入力</div>
+        <div class="calc-description">グループ2以降から入力してください。グループ1には、総額・総人数からグループ2以降を引いた数値が表示されます。</div>
+        <div class="calc-description">10の位で切り上げを行なうため、あまりが生じます。</div>
+        <div class="indispensable-description">※は必須項目です。</div>
 
   
     <%# 販売価格 %>
@@ -26,22 +29,18 @@
    
       <div class="group">
         <div class="group-text">
-          <span>グループ名</span>
+          <span class="group-name"> グループ名</span>
           <%= f.text_field :hoge, class:"group-input", id:"group-name-one", placeholder:"例）グループ１" %>
         </div>
-        <div class="group">
-          <div class="group-text">
+        <div class="group-one">
+          <div class="group-text-one">
             <span>人数</span>
-          </div>
-          <div class = "space">
-          <span id='group-people-one'></span>人
+            <span id='group-people-one'></span>人
           </div>
         </div>
-        <div class="group">
-          <div class="group-text">
-            <span>価格</span>
-          </div>
-          <div class="space">
+        <div class="group-one">
+          <div class="group-text-one">
+            <span>一人あたり</span>
             <span id='group-price-one'></span>円
           </div>
         </div>
@@ -55,31 +54,48 @@
         <span>グループ名</span>
         <%= f.text_field :hoge, class:"group-input", id:"group-name-two", placeholder:"例）グループ２" %>
       </div>
- 
-      
       <div class="group-text">
         <span>人数</span>
         <span class="indispensable">※</span>
         <%= f.text_field :hoge, class:"group-input", id:"group-people-two", placeholder:"例）1" %>人
       </div>
-      
-      
       <div class="group-text">
-         <span>価格</span>
+         <span>一人あたり</span>
          <span class="indispensable">※</span>
          <%= f.text_field :hoge, class:"group-input", id:"group-price-two", placeholder:"例）10000" %>円
       </div>
     </div>
-
-      <div class="indivisible-number">
-        <div class="group-text">
-          <span>あまり</span>
-        </div>
-        <div class ="space">
-          <span id='indivisible-number'></span>円
-        </div>
-      </div>
     <%# グループ２ %>
+
+    <%# グループ3 %>
+    <div class="group">
+      <div class="group-text">
+        <span>グループ名</span>
+        <%= f.text_field :hoge, class:"group-input", id:"group-name-three", placeholder:"例）グループ3" %>
+      </div>
+ 
+      
+      <div class="group-text">
+        <span>人数</span>
+        <span class="indispensable">※</span>
+        <%= f.text_field :hoge, class:"group-input", id:"group-people-three", placeholder:"例）1" %>人
+      </div>
+      
+      
+      <div class="group-text">
+         <span>一人あたり</span>
+         <span class="indispensable">※</span>
+         <%= f.text_field :hoge, class:"group-input", id:"group-price-three", placeholder:"例）10000" %>円
+      </div>
+    </div>
+    <%# グループ3 %>
+
+  <div class="group-invisible">
+    <div class="indivisible-number">      
+      <span>あまり</span>
+      <span id='indivisible-number'></span>円
+    </div>
+  </div>
     <%# /販売価格 %>
   
   <% end %>
