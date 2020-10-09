@@ -35,17 +35,18 @@ DEMOの実行方法など、"Webアプリ"の基本的な使い方を説明
 * 目的
 飲み会などにおいて、各々の立場に応じて支払額を設定し、割り前勘定を行う際に用いる。また、その計算の履歴を残しておき、金銭面のトラブル解決に役立てる。
 
-* 詳細：
-①計算機能
-∟立場、役割ごとに支払額か比率を入力して、割り前勘定計算ができる機能
+* 詳細
+1.計算機能
+  ∟立場、役割ごとに支払額か比率を入力して、割り前勘定計算ができる機能
 
-②ユーザー管理機能
-∟新規登録、ログイン、ログアウト
+2.ユーザー管理機能
+  ∟新規登録、ログイン、ログアウト
 
-③飲み会履歴保存機能（ログイン中のユーザーに限り）
-∟①の計算結果、会場、日時など
+3.飲み会履歴保存機能（ログイン中のユーザーに限り）
+  ∟計算結果、会場、日時など
 
 * ストーリー(ユースケース)
+
 サイトを開いてすぐに数値を入力するフォームがあり、入力するとページ遷移せずに瞬時に計算結果が表示される。
 
 また、ユーザー新規登録・ログイン・ログアウト機能も実装。
@@ -54,11 +55,12 @@ DEMOの実行方法など、"Webアプリ"の基本的な使い方を説明
 
 ## テーブル
 
-![ER図](https://gyazo.com/db0f65058cf4736a57439ec599439a0d)
+![ER図](<img width="767" alt="スクリーンショット 2020-10-09 17 59 23" src="https://user-images.githubusercontent.com/70509887/95564074-3b687280-0a59-11eb-871a-3606ce9daf35.png">)
 
 ## 実装した機能
 * 計算機能
 ∟立場、役割ごとに支払額か比率を入力して、割り前勘定計算ができる機能
+
 ![warizan](https://user-images.githubusercontent.com/70509887/95561160-48836280-0a55-11eb-80e1-dc808b66cc5f.gif)
 
 
@@ -79,12 +81,10 @@ git clone https://github.com/kohki-kimura/split-the-bill.git #アプリをclone
 bundle install #Gemを有効にする
 rails db:create #データベースを作成する
 rails db:migrate #データベースを有効にする
-
-
 ```
 
 ## 開発環境
 * ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-darwin19]
-Rails 6.0.3.3
-mysql  Ver 14.14 Distrib 5.6.47, for osx10.15 (x86_64) using  EditLine wrapper
-Mac OS Catalina version 10.15.6
+* Rails 6.0.3.3
+* mysql  Ver 14.14 Distrib 5.6.47, for osx10.15 (x86_64) using  EditLine wrapper
+* Mac OS Catalina version 10.15.6
