@@ -52,7 +52,7 @@
 
 ## テーブル
 
-![ER図](img width="767" alt="スクリーンショット 2020-10-09 17 59 23" src="https://user-images.githubusercontent.com/70509887/95564074-3b687280-0a59-11eb-871a-3606ce9daf35.png")
+![ER図](https://user-images.githubusercontent.com/70509887/95564074-3b687280-0a59-11eb-871a-3606ce9daf35.png)
 
 ## 実装した機能
 * 計算機能
