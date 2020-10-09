@@ -28,20 +28,38 @@
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  padding: 10px 0;
+  padding: 0 0 15px 0;
 }
 
 .calc-title-two {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  padding: 15px 0 30px 0;
+  padding: 20px 0 30px 0;
+
+  
 }
 
 .calc-description{
+  font-size: 17px;
+  text-align: center;
+}
+
+.description{
   font-size: 15px;
   text-align: center;
-  padding-bottom: 10px;
+}
+
+.description_one{
+  font-size: 15px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.description_two{
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .total{
@@ -77,10 +95,9 @@
 
 .indispensable-description {
   color: #ea352d;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 10px;
 }
 /* /共通 */
 
@@ -88,14 +105,6 @@
 /* 計算 */
 
 .group {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  /* border-bottom: 1px solid #ccc; */
-}
-
-.group-one {
   padding: 10px;
   display: flex;
   align-items: center;
@@ -110,7 +119,7 @@
 }
 
 .group-text-one {
-  width: 200px;
+  width: 123px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -119,12 +128,18 @@
 }
 
 .group-input {
-  width: 135px;
+  width: 105px;
   height: 30px;
   text-align: right;
   padding-right: 10px;
 }
 
+.group-input-name {
+  width: 130px;
+  height: 30px;
+  text-align: right;
+  padding-right: 10px;
+}
 
 .group-invisible {
   padding: 10px;
