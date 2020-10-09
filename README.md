@@ -1,24 +1,93 @@
 # README
 
+# アプリケーション名
+らくらく割り勘算
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+## アプリケーション概要
+一律同じ額でない割り勘をする際、ひとりひとりの支払額を表示することができます。
 Things you may want to cover:
 
-* Ruby version
+## URL
+デプロイ次第記述
 
-* System dependencies
+## テスト用アカウント
+ログイン機能実装次第記述
 
-* Configuration
+## 利用方法
 
+DEMOの実行方法など、"Webアプリ"の基本的な使い方を説明
 * Database creation
 
+1. まず、割り勘計算を行う上での総支払額と総人数を入力します
+2. 続いて、グループ2以降に人数と、比率or一人当たりの支払額を入力します
+3. それらの数値をもとに計算を行い、グループ1を含め、全員の一人当たり支払う金額が出力されます
 * Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## 課題解決
 
-* Deployment instructions
+主に飲み会の幹事向けアプリです。
+男女やお酒が飲める・飲めないで支払額を分ける際、手軽に計算できるようこのアプリを作りました。
 
-* ...
+データ保存機能を実装予定なので、金額の履歴を後から確認でき、お金のトラブル解決にも貢献できます。
+
+## 要件定義
+* 機能
+全員同額でない割り前勘定をする際の計算機能と、その経歴を残しておく保存機能
+
+* 目的
+飲み会などにおいて、各々の立場に応じて支払額を設定し、割り前勘定を行う際に用いる。また、その計算の履歴を残しておき、金銭面のトラブル解決に役立てる。
+
+* 詳細：
+①計算機能
+∟立場、役割ごとに支払額か比率を入力して、割り前勘定計算ができる機能
+
+②ユーザー管理機能
+∟新規登録、ログイン、ログアウト
+
+③飲み会履歴保存機能（ログイン中のユーザーに限り）
+∟①の計算結果、会場、日時など
+
+* ストーリー(ユースケース)
+サイトを開いてすぐに数値を入力するフォームがあり、入力するとページ遷移せずに瞬時に計算結果が表示される。
+
+また、ユーザー新規登録・ログイン・ログアウト機能も実装。
+
+ログイン中のユーザーに限り、飲み会の会場や日時を追加でフォームに記入でき、飲み会履歴の保存と確認を行うことができる。
+
+## テーブル
+
+![ER図](https://gyazo.com/db0f65058cf4736a57439ec599439a0d)
+
+## 実装した機能
+* 計算機能
+∟立場、役割ごとに支払額か比率を入力して、割り前勘定計算ができる機能
+![warizan](https://user-images.githubusercontent.com/70509887/95561160-48836280-0a55-11eb-80e1-dc808b66cc5f.gif)
+
+
+## 実装予定の機能
+* ユーザーログイン機能
+* データ保存機能
+
+
+## ローカルでの動作方法
+以下の順で入力してください。
+
+```
+git clone https://github.com/kohki-kimura/split-the-bill.git #アプリをclone
+
+% cd #ホームディレクトリに移動
+% cd split-the-bill #split-the-billディレクトリに移動
+
+bundle install #Gemを有効にする
+rails db:create #データベースを作成する
+rails db:migrate #データベースを有効にする
+```
+
+## 開発環境
+* ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-darwin19]
+Rails 6.0.3.3
+mysql  Ver 14.14 Distrib 5.6.47, for osx10.15 (x86_64) using  EditLine wrapper
+Mac OS Catalina version 10.15.6
