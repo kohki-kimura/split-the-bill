@@ -1,0 +1,160 @@
+/* 情報 */
+
+.calc-contents {
+  background-color: #4682b4;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100px;
+  padding: 100vh,100vw;
+}
+
+.calc-header {
+  padding: 5vh 0;
+  text-align: center;
+}
+
+.calc-main {
+  background-color: #FFF;
+  width: 70vw;
+  min-width: 450px;
+  padding: 10vh;
+  margin: 0 0 10vh 0;
+}
+
+.calc-title-one {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 0 15px 0;
+}
+
+.calc-title-two {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0 30px 0;
+
+  
+}
+
+.calc-description{
+  font-size: 17px;
+  text-align: center;
+}
+
+.description{
+  font-size: 15px;
+  text-align: center;
+}
+
+.description_one{
+  font-size: 15px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.description_two{
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.total{
+  padding: 10px 10px 30px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 5px solid #4682b4;
+}
+
+.total-payment {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.total-people {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* 情報 */
+
+/* 共通 */
+.indispensable {
+  color: #ea352d;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.indispensable-description {
+  color: #ea352d;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+/* /共通 */
+
+
+/* 計算 */
+
+.group {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.group-text {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.group-text-one {
+  width: 123px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+}
+
+.group-input {
+  width: 105px;
+  height: 30px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.group-input-name {
+  width: 130px;
+  height: 30px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.group-invisible {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.indivisible-number{
+  width: 200px;
+  padding: 50px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+}
+
+/* /計算 */
