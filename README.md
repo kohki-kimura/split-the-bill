@@ -59,7 +59,7 @@
 
 ∟立場、役割ごとに支払額か比率を入力して、割り前勘定計算ができる機能
 
-![warizan](https://user-images.githubusercontent.com/70509887/95561160-48836280-0a55-11eb-80e1-dc808b66cc5f.gif)
+![warizan](https://user-images.githubusercontent.com/70509887/95565633-74094b80-0a5b-11eb-9623-f6c90a70ad5e.gif)
 
 
 ## 実装予定の機能
