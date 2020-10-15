@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.top-page-header {
+  width: 100%;
+  padding: 2vh 15vw;
+  display: flex;
+}
+
+.app-name{
+  color: black;
+  font-weight: bold;
+  font-size: 35px;
+  padding-left: 50px;
+  margin-bottom: 13px;
+}
+
+.icon {
+  width: 2vw;
+  margin-left: 10px;
+  margin-top: 5px;
+}
