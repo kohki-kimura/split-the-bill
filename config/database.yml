@@ -19,14 +19,14 @@ default: &default
 
 development:
   <<: *default
-  database: split_the_bill_development
+  database: warikan_com_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: split_the_bill_test
+  database: warikan_com_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: split_the_bill_production
-  username: split_the_bill
-  password: <%= ENV['SPLIT_THE_BILL_DATABASE_PASSWORD'] %>
+  database: warikan_com_production
+  username: warikan_com
+  password: <%= ENV['warikan_com_DATABASE_PASSWORD'] %>

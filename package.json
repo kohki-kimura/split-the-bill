@@ -1,5 +1,5 @@
 {
-  "name": "split_the_bill",
+  "name": "warikan.com",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0-alpha",

@@ -72,10 +72,10 @@
 以下の順でターミナルに入力してください。
 
 ```
-git clone https://github.com/kohki-kimura/split-the-bill.git #アプリをclone
+git clone https://github.com/kohki-kimura/-the-bill.git #アプリをclone
 
 % cd #ホームディレクトリに移動
-% cd split-the-bill #split-the-billディレクトリに移動
+% cd warikan-com #warikan-comディレクトリに移動
 
 bundle install #Gemを有効にする
 rails db:create #データベースを作成する
