@@ -9,7 +9,6 @@
 }
 
 .app-name{
-  text-decoration: none;
   color: black;
   font-weight: bold;
   font-size: 35px;
@@ -31,27 +30,32 @@
 }
 
 
-/* .user-nickname {
-  text-decoration: none;
+.user-nickname {
   margin-right: 3vw;
   color: black;
   font-weight: bold;
+  padding-left:350px;
 } */
 
 
-/* .logout {
-  text-decoration: none;
-  color: black;
-} */
+.logout {
+  font-weight: bold;
+}
 
 .login {
   text-decoration: none;
   margin-right: 3vw;
-  color: black;
   padding-left:350px;
+  font-weight: bold;
 }
 
 .sign-up {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+a {
   text-decoration: none;
   color: black;
 }
