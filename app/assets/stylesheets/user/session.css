@@ -1,7 +1,7 @@
 .session-main {
   width: 100%;
   min-width: 800px;
-  height: 100%;
+  height: 85vh;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -11,7 +11,6 @@
 .form-wrap {
   width: 70%;
   background-color: white;
-  padding-bottom: 70px;
 }
 
 .form-header {
@@ -47,9 +46,6 @@
   align-items: center;
 }
 
-.form-group:first-child {
-  padding: 0;
-}
 
 .form-text-wrap {
   width: 100%;
