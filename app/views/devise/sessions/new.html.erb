@@ -8,6 +8,12 @@
     </h1>
   </div>
 
+  <div class="error_message">
+   <%- flash.each do |name, msg| -%>
+   <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+   <% end %>  
+  </div>
+
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">メールアドレス</label>
