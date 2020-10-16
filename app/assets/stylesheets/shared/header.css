@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+.top-page-header {
+  width: 100%;
+  padding: 2vh 15vw;
+  display: flex;
+}
+
+.app-name{
+  color: black;
+  font-weight: bold;
+  font-size: 35px;
+  padding-left: 50px;
+  margin-bottom: 13px;
+}
+
+.icon {
+  width: 2vw;
+  margin-left: 10px;
+}
+
+.lists {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+
+.user-nickname {
+  margin-right: 3vw;
+  color: black;
+  font-weight: bold;
+  padding-left:380px;
+} */
+
+
+.logout {
+  font-weight: bold;
+}
+
+.login {
+  text-decoration: none;
+  margin-right: 3vw;
+  padding-left:380px;
+  font-weight: bold;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

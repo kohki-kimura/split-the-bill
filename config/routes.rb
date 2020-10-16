@@ -1,3 +1,4 @@
 Rails.application.routes.draw do 
-  root 'calculations#index'
+  devise_for :users
+  root to:'calculations#index'
 end

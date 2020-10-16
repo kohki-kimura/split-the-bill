@@ -1,14 +1,13 @@
 /* 情報 */
 
 .calc-contents {
-  background-color: #4682b4;
+  background-color: black;
   font-size: 15px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  min-width: 100px;
-  padding: 100vh,100vw;
+  width: 100%;
 }
 
 .calc-header {
@@ -48,17 +47,7 @@
 .description{
   font-size: 15px;
   text-align: center;
-}
-
-.description_one{
-  font-size: 15px;
-  text-align: center;
   padding-top: 15px;
-}
-
-.description_two{
-  font-size: 15px;
-  text-align: center;
   padding-bottom: 20px;
 }
 
@@ -67,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 5px solid #4682b4;
+  border-bottom: 5px solid dimgray;
 }
 
 .total-payment {
@@ -89,7 +78,7 @@
 /* 共通 */
 .indispensable {
   color: #ea352d;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: bold;
 }
 
@@ -119,8 +108,8 @@
 }
 
 .group-text-one {
-  width: 123px;
-  padding: 10px;
+  width: 130px;
+  padding: 0 10px 10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -129,14 +118,14 @@
 
 .group-input {
   width: 105px;
-  height: 30px;
+  height: 35px;
   text-align: right;
   padding-right: 10px;
 }
 
 .group-input-name {
   width: 130px;
-  height: 30px;
+  height: 35px;
   text-align: right;
   padding-right: 10px;
 }
@@ -147,6 +136,17 @@
   align-items: center;
   justify-content: flex-end;
 }
+
+.indivisible-number{
+  width: 200px;
+  padding: 50px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+}
+
+/* /計算 */
 
 .indivisible-number{
   width: 200px;
