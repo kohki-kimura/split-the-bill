@@ -14,7 +14,7 @@
 }
 
 .error_message{
-  padding-left: 38%;
+  text-align: center;
   list-style: none;
   color: red;
 }

@@ -12,12 +12,12 @@
       <div class="total-payment">
         <span>総支払額</span>
         <span class="indispensable">※</span>
-         <%= f.text_field :total_payment, type:"number", class:"total-people", id:"total-payment", placeholder:"例）50000" %>円
+         <%= f.text_field :total_payment, type:"number", class:"total-payment-input", id:"total-payment", placeholder:"例）50000" %>円
       </div>
       <div class="total-people">
         <span>総人数</span>
         <span class="indispensable">※</span>
-         <%= f.text_field :total_people, type:"number", class:"total-people", id:"total-people", placeholder:"例）5" %>人
+         <%= f.text_field :total_people, type:"number", class:"total-people-input", id:"total-people", placeholder:"例）5" %>人
       </div>
     </div>
       <div class="calc-title-two">計算入力</div>
@@ -28,25 +28,25 @@
   
     <%# 計算 %>
       <div class="group">
-        <div class="group-text">
-          <span class="group-name">グループ名</span>
+        <div class="group-text-one">
+          <span class="group-name">&nbsp;グループ名</span>
         </div>
 
         <div class="group">
-          <div class="group-text">
-            <span>人数</span>
+          <div class="group-text-one">
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;人数</span>
           </div>
         </div>
 
         <div class="group">
-          <div class="group-text">
-            <span>比率</span>
+          <div class="group-text-one">
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;比率</span>
           </div>
         </div>
 
         <div class="group">
-          <div class="group-text">
-            <span>一人あたり</span>
+          <div class="group-text-pne">
+            <span>&nbsp;&nbsp;一人あたり</span>
           </div>
         </div>
       </div>
@@ -60,17 +60,17 @@
         </div>
 
         <div class="group-text">
-          <span class="indispensable">※</span>
+        <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
           <%= f.text_field :people_one, type:"number", class:"group-input-one", id:"group-people-one", readonly: true %>人
         </div>
 
         <div class="group-text">
-         <span class="indispensable">※</span>
+        <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
          <%= f.text_field :ratio_one, type:"decimal", class:"group-input-one", id:"group-ratio-one", readonly: true %>%
         </div>
 
         <div class="group-text">
-         <span class="indispensable">※</span>
+        <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
          <%= f.text_field :price_one, type:"number", class:"group-input-one", id:"group-price-one", readonly: true %>円
         </div>
       </div>
@@ -127,17 +127,15 @@
     <%# あまり %>
       <div class="group-invisible">
          <span class="indivisible-number">あまり</span>
-         <%= f.text_field :indivisible_number, type:"number", class:"group-input-one", id:"indivisible-number" %>円
+         <%= f.text_field :indivisible_number, type:"number", class:"group-input-one", id:"indivisible-number", readonly: true%>円
       </div>
     <%# あまり %>
   
     <%# 計算 %>
 
-    <div class="sell-btn-contents">
-      <%= f.submit "保存",class:"sell-btn" %>
+    <div>
+      <%= f.submit "保存",class:"black-btn" %>
     </div>
-    <%# <div><%= link_to '保存', calculations_path, method: :post,class: "login"</div> %>
-     
   
   <% end %>
 </div>
