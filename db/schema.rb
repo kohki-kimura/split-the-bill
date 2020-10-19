@@ -17,15 +17,15 @@ ActiveRecord::Schema.define(version: 2020_10_16_060445) do
     t.integer "total_people", null: false
     t.string "group_name_one"
     t.integer "people_one", null: false
-    t.integer "ratio_one", null: false
+    t.float "ratio_one", null: false
     t.integer "price_one", null: false
     t.string "group_name_two"
     t.integer "people_two", null: false
-    t.integer "ratio_two", null: false
+    t.float "ratio_two", null: false
     t.integer "price_two", null: false
     t.string "group_name_three"
     t.integer "people_three"
-    t.integer "ratio_three"
+    t.float "ratio_three"
     t.integer "price_three"
     t.integer "indivisible_number", null: false
     t.integer "user_id", null: false
