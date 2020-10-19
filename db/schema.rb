@@ -12,21 +12,23 @@
 
 ActiveRecord::Schema.define(version: 2020_10_16_060445) do
 
-  create_table "caluclations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "total_payment", null: false
-    t.integer "total_people", null: false
-    t.string "group_name_one", null: false
-    t.integer "people_one", null: false
-    t.integer "ratio_one", null: false
-    t.integer "price_one", null: false
-    t.string "group_name_two", null: false
-    t.integer "people_two", null: false
-    t.integer "ratio_two", null: false
-    t.integer "price_two", null: false
-    t.string "group_name_three", null: false
-    t.integer "people_three", null: false
-    t.integer "ratio_three", null: false
-    t.integer "price_three", null: false
+  create_table "calculations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "total_payment", default: 0, null: false
+    t.integer "total_people", default: 0, null: false
+    t.string "group_name_one"
+    t.integer "people_one", default: 0, null: false
+    t.integer "ratio_one", default: 0, null: false
+    t.integer "price_one", default: 0, null: false
+    t.string "group_name_two"
+    t.integer "people_two", default: 0, null: false
+    t.integer "ratio_two", default: 0, null: false
+    t.integer "price_two", default: 0, null: false
+    t.string "group_name_three"
+    t.integer "people_three"
+    t.integer "ratio_three"
+    t.integer "price_three"
+    t.integer "indivisible_number", default: 0, null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

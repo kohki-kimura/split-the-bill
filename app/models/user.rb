@@ -7,5 +7,5 @@ class User < ApplicationRecord
   validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i }
   validates :nickname, presence: true
 
-  has_many :caluclations
+  has_many :calculations
 end
