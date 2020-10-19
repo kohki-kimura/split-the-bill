@@ -10,7 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_15_200008) do
+ActiveRecord::Schema.define(version: 2020_10_16_060445) do
+
+  create_table "calculations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "total_payment", null: false
+    t.integer "total_people", null: false
+    t.string "group_name_one"
+    t.integer "people_one", null: false
+    t.float "ratio_one", null: false
+    t.integer "price_one", null: false
+    t.string "group_name_two"
+    t.integer "people_two", null: false
+    t.float "ratio_two", null: false
+    t.integer "price_two", null: false
+    t.string "group_name_three"
+    t.integer "people_three"
+    t.float "ratio_three"
+    t.integer "price_three"
+    t.integer "indivisible_number", null: false
+    t.integer "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false

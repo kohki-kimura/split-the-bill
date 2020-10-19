@@ -29,18 +29,18 @@ function calc(){
     let price_three_value = group_price_three.value;          // グループ3の支払額
     
     let people = people_value - people_two_value - people_three_value;
-    group_people_one.textContent = people;                                                            // グループ1の人数(表示)
+    group_people_one.value = people;                                                            // グループ1の人数(表示)
 
     let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
     let payment_cell = Math.ceil(payment/100)*100;
-    group_price_one.textContent =  payment_cell;                                                      // グループ1の支払額(表示)
+    group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
     let ratio_two_value = group_ratio_two.value = Math.floor((((price_two_value * people_two_value) / payment_value) * 100) * 100)/100;
     let ratio_three_value = group_ratio_three.value = Math.floor((((price_three_value * people_three_value) / payment_value) * 100) * 100)/100;
-    group_ratio_one.textContent = 100 - ratio_two_value - ratio_three_value;                          // グループ1の比率(表示)
+    group_ratio_one.value = 100 - ratio_two_value - ratio_three_value;                          // グループ1の比率(表示)
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
-    indivisible_number.textContent =  (formula - payment_value);                                      // あまり(表示)
+    indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
   });
   // のフォームを押した時のイベント発火
 
@@ -55,18 +55,18 @@ function calc(){
     let price_three_value = group_price_three.value;          // グループ3の支払額
     
     let people = people_value - people_two_value - people_three_value;
-    group_people_one.textContent = people;                                                            // グループ1の人数(表示)
+    group_people_one.value = people;                                                            // グループ1の人数(表示)
 
     let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
     let payment_cell = Math.ceil(payment/100)*100;
-    group_price_one.textContent =  payment_cell;                                                      // グループ1の支払額(表示)
+    group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
     let ratio_two_value = group_ratio_two.value = Math.floor((((price_two_value * people_two_value) / payment_value) * 100) * 100)/100;
     let ratio_three_value = group_ratio_three.value = Math.floor((((price_three_value * people_three_value) / payment_value) * 100) * 100)/100;
-    group_ratio_one.textContent = 100 - ratio_two_value - ratio_three_value;                          // グループ1の比率(表示)
+    group_ratio_one.value = 100 - ratio_two_value - ratio_three_value;                          // グループ1の比率(表示)
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
-    indivisible_number.textContent =  (formula - payment_value);                                      // あまり(表示)
+    indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
   });
    // 総人数のフォームを押した時のイベント発火
 
@@ -81,18 +81,18 @@ function calc(){
     let price_three_value = group_price_three.value;          // グループ3の支払額
     
     let people = people_value - people_two_value - people_three_value;
-    group_people_one.textContent = people;                                                            // グループ1の人数(表示)
+    group_people_one.value = people;                                                            // グループ1の人数(表示)
 
     let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
     let payment_cell = Math.ceil(payment/100)*100;
-    group_price_one.textContent =  payment_cell;                                                      // グループ1の支払額(表示)
+    group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
     let ratio_two_value = group_ratio_two.value = Math.floor((((price_two_value * people_two_value) / payment_value) * 100) * 100)/100;
     let ratio_three_value = group_ratio_three.value = Math.floor((((price_three_value * people_three_value) / payment_value) * 100) * 100)/100;
-    group_ratio_one.textContent = 100 - ratio_two_value - ratio_three_value;                          // グループ1の比率(表示)
+    group_ratio_one.value = 100 - ratio_two_value - ratio_three_value;                          // グループ1の比率(表示)
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
-    indivisible_number.textContent =  (formula - payment_value);                                      // あまり(表示)
+    indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
   });
   // グループ2 人数のフォームを押した時のイベント発火
 
@@ -107,18 +107,18 @@ function calc(){
     let price_three_value = group_price_three.value;          // グループ3の支払額
     
     let people = people_value - people_two_value - people_three_value;
-    group_people_one.textContent = people;                                                            // グループ1の人数(表示)
+    group_people_one.value = people;                                                            // グループ1の人数(表示)
 
     let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
     let payment_cell = Math.ceil(payment/100)*100;
-    group_price_one.textContent =  payment_cell;                                                      // グループ1の支払額(表示)
+    group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
     let ratio_two_value = group_ratio_two.value = Math.floor((((price_two_value * people_two_value) / payment_value) * 100) * 100)/100;
     let ratio_three_value = group_ratio_three.value = Math.floor((((price_three_value * people_three_value) / payment_value) * 100) * 100)/100;
-    group_ratio_one.textContent = 100 - ratio_two_value - ratio_three_value;                          // グループ1の比率(表示)
+    group_ratio_one.value = 100 - ratio_two_value - ratio_three_value;                          // グループ1の比率(表示)
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
-    indivisible_number.textContent =  (formula - payment_value);                                      // あまり(表示)
+    indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
   });
   // グループ2 支払額のフォームを押した時のイベント発火
 
@@ -132,18 +132,18 @@ function calc(){
     let price_three_value = group_price_three.value;          // グループ3の支払額
     
     let people = people_value - people_two_value - people_three_value;
-    group_people_one.textContent = people;                                                            // グループ1の人数(表示)
+    group_people_one.value = people;                                                            // グループ1の人数(表示)
 
     let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
     let payment_cell = Math.ceil(payment/100)*100;
-    group_price_one.textContent =  payment_cell;                                                      // グループ1の支払額(表示)
+    group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
     let ratio_two_value = group_ratio_two.value = Math.floor((((price_two_value * people_two_value) / payment_value) * 100) * 100)/100;
     let ratio_three_value = group_ratio_three.value = Math.floor((((price_three_value * people_three_value) / payment_value) * 100) * 100)/100;
-    group_ratio_one.textContent = 100 - ratio_two_value - ratio_three_value;                          // グループ1の比率(表示)
+    group_ratio_one.value = 100 - ratio_two_value - ratio_three_value;                          // グループ1の比率(表示)
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
-    indivisible_number.textContent =  (formula - payment_value);                                      // あまり(表示)
+    indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
   });
   // グループ3 人数のフォームを押した時のイベント発火
 
@@ -157,18 +157,18 @@ function calc(){
     let price_three_value = group_price_three.value;          // グループ3の支払額
     
     let people = people_value - people_two_value - people_three_value;
-    group_people_one.textContent = people;                                                            // グループ1の人数(表示)
+    group_people_one.value = people;                                                            // グループ1の人数(表示)
 
     let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
     let payment_cell = Math.ceil(payment/100)*100;
-    group_price_one.textContent =  payment_cell;                                                      // グループ1の支払額(表示)
+    group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
     let ratio_two_value = group_ratio_two.value = Math.floor((((price_two_value * people_two_value) / payment_value) * 100) * 100)/100;
     let ratio_three_value = group_ratio_three.value = Math.floor((((price_three_value * people_three_value) / payment_value) * 100) * 100)/100;
-    group_ratio_one.textContent = 100 - ratio_two_value - ratio_three_value;                          // グループ1の比率(表示)
+    group_ratio_one.value = 100 - ratio_two_value - ratio_three_value;                          // グループ1の比率(表示)
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
-    indivisible_number.textContent =  (formula - payment_value);                                      // あまり(表示)
+    indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
   });
   // グループ3 支払額のフォームを押した時のイベント発火
 
@@ -186,11 +186,11 @@ function calc(){
     if (people_two_value) {
 
       let people = people_value - people_two_value - people_three_value;
-      group_people_one.textContent = people;                                                            // グループ1の人数(表示)
+      group_people_one.value = people;                                                            // グループ1の人数(表示)
 
       let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
       let payment_cell = Math.ceil(payment/100)*100;
-      group_price_one.textContent =  payment_cell;                                                      // グループ1の支払額(表示)
+      group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
       let ratio_two = ((ratio_two_value / 100) * payment_value) / people_two_value;
       let ratio_cell_two = Math.ceil(ratio_two/100)*100;
@@ -202,10 +202,10 @@ function calc(){
             group_price_three.value = ratio_cell_three;                                                 // グループ3の支払額(表示)
           }
 
-      group_ratio_one.textContent = 100 - ratio_three_value - ratio_two_value;                          // グループ1の比率(表示)
+      group_ratio_one.value = 100 - ratio_three_value - ratio_two_value;                          // グループ1の比率(表示)
 
       formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
-      indivisible_number.textContent =  (formula - payment_value);                                      // あまり(表示)
+      indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
     }
   });
   // グループ2 比率のフォームを押した時のイベント発火(keyup)
@@ -224,11 +224,11 @@ function calc(){
     if (people_two_value) {
 
       let people = people_value - people_two_value - people_three_value;
-      group_people_one.textContent = people;                                                            // グループ1の人数(表示)
+      group_people_one.value = people;                                                            // グループ1の人数(表示)
 
       let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
       let payment_cell = Math.ceil(payment/100)*100;
-      group_price_one.textContent =  payment_cell;                                                      // グループ1の支払額(表示)
+      group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
       let ratio_two = ((ratio_two_value / 100) * payment_value) / people_two_value;
       let ratio_cell_two = Math.ceil(ratio_two/100)*100;
@@ -240,10 +240,10 @@ function calc(){
             group_price_three.value = ratio_cell_three;                                                 // グループ3の支払額(表示)
           }
 
-      group_ratio_one.textContent = 100 - ratio_three_value - ratio_two_value;                          // グループ1の比率(表示)
+      group_ratio_one.value = 100 - ratio_three_value - ratio_two_value;                          // グループ1の比率(表示)
 
       formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
-      indivisible_number.textContent =  (formula - payment_value);                                      // あまり(表示)
+      indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
     }
   });
   // グループ2 比率のフォームを押した時のイベント発火(input)
@@ -261,11 +261,11 @@ function calc(){
 
     if (people_three_value) {
     let people = people_value - people_two_value - people_three_value;
-    group_people_one.textContent = people;                                                            // グループ1の人数(表示)
+    group_people_one.value = people;                                                            // グループ1の人数(表示)
 
     let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
     let payment_cell = Math.ceil(payment/100)*100;
-    group_price_one.textContent =  payment_cell;                                                      // グループ1の支払額(表示)
+    group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
     
     
     let ratio_three = ((ratio_three_value / 100) * payment_value) / people_three_value;
@@ -278,10 +278,10 @@ function calc(){
         group_price_three.value = ratio_cell_three;                                                     // グループ2の支払額(表示)
       }
   
-    group_ratio_one.textContent = 100  - ratio_three_value - ratio_two_value;                         // グループ1の比率(表示)
+    group_ratio_one.value = 100  - ratio_three_value - ratio_two_value;                         // グループ1の比率(表示)
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
-    indivisible_number.textContent =  (formula - payment_value);                                      // あまり(表示)
+    indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
     }
   });
   // グループ3 比率のフォームを押した時のイベント発火(keyup)
@@ -299,11 +299,11 @@ function calc(){
 
     if (people_three_value) {
     let people = people_value - people_two_value - people_three_value;
-    group_people_one.textContent = people;                                                            // グループ1の人数(表示)
+    group_people_one.value = people;                                                            // グループ1の人数(表示)
 
     let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
     let payment_cell = Math.ceil(payment/100)*100;
-    group_price_one.textContent =  payment_cell;                                                      // グループ1の支払額(表示)
+    group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
     
     
     let ratio_three = ((ratio_three_value / 100) * payment_value) / people_three_value;
@@ -316,10 +316,10 @@ function calc(){
         group_price_three.value = ratio_cell_three;                                                     // グループ2の支払額(表示)
       }
   
-    group_ratio_one.textContent = 100  - ratio_three_value - ratio_two_value;                         // グループ1の比率(表示)
+    group_ratio_one.value = 100  - ratio_three_value - ratio_two_value;                         // グループ1の比率(表示)
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
-    indivisible_number.textContent =  (formula - payment_value);                                      // あまり(表示)
+    indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
     }
   });
   // グループ3 比率のフォームを押した時のイベント発火(input)
