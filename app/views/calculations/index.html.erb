@@ -5,19 +5,19 @@
   </header>
   <%# 情報 %>
   <div class="calc-main">
-   <%= form_with local: true do |f| %>
+   <%= form_with model: @calculation, url:calculations_path, local: true do |f| %>
    <div class="calc-title-one">総数入力</div>
    <div class="indispensable-description">必須項目です。</div>
    <div class="total">
       <div class="total-payment">
         <span>総支払額</span>
         <span class="indispensable">※</span>
-         <%= f.text_field :hoge, type:"number", class:"total-people", id:"total-payment", placeholder:"例）50000" %>円
+         <%= f.text_field :total_payment, type:"number", class:"total-people", id:"total-payment", placeholder:"例）50000" %>円
       </div>
       <div class="total-people">
         <span>総人数</span>
         <span class="indispensable">※</span>
-         <%= f.text_field :hoge, type:"number", class:"total-people", id:"total-people", placeholder:"例）5" %>人
+         <%= f.text_field :total_people, type:"number", class:"total-people", id:"total-people", placeholder:"例）5" %>人
       </div>
     </div>
       <div class="calc-title-two">計算入力</div>
@@ -56,27 +56,25 @@
       <div class="group">
         <div class="group-text">
           <span class="group-name"></span>
-          <%= f.text_field :hoge, class:"group-input-name", id:"group-name-one", placeholder:"例）グループ１" %>
+          <%= f.text_field :group_name_one, class:"group-input-name", id:"group-name-one", placeholder:"例）グループ１" %>
         </div>
 
-        <div class="group">
-          <div class="group-text-one">
-            <span id='group-people-one'></span>
-            <span class = "unit">人</span>
-          </div>
+        <div class="group-text">
+          <span class="indispensable">※</span>
+          <%= f.text_field :people_one, type:"number", class:"group-input", id:"group-people-one", placeholder:"例）1",readonly: true %>人
         </div>
 
         <div class="group">
           <div class="group-text-one">
             <span id='group-ratio-one'></span> 
-            <span class = "unit"> %</span>
+            <span :ratio_one, class = "unit"> %</span>
           </div>
         </div>
 
         <div class="group">
           <div class="group-text-one">
             <span id='group-price-one'></span>
-            <span class = "unit"> 円</span>
+            <span :price_one, class = "unit"> 円</span>
           </div>
         </div>
       </div>
@@ -86,22 +84,22 @@
     <%# グループ2 %>
     <div class="group">
       <div class="group-text">
-        <%= f.text_field :hoge, class:"group-input-name", id:"group-name-two", placeholder:"例）グループ２" %>
+        <%= f.text_field :group_name_two, class:"group-input-name", id:"group-name-two", placeholder:"例）グループ２" %>
       </div>
 
       <div class="group-text">
         <span class="indispensable">※</span>
-        <%= f.text_field :hoge, type:"number", class:"group-input", id:"group-people-two", placeholder:"例）1" %>人
+        <%= f.text_field :people_two, type:"number", class:"group-input", id:"group-people-two", placeholder:"例）1" %>人
       </div>
 
       <div class="group-text">
          <span class="indispensable">※</span>
-         <%= f.text_field :hoge, type:"number", class:"group-input", id:"group-ratio-two" ,placeholder:"例）10" %>%
+         <%= f.text_field :ratio_two, type:"number", class:"group-input", id:"group-ratio-two" ,placeholder:"例）10" %>%
       </div>
 
       <div class="group-text">
          <span class="indispensable">※</span>
-         <%= f.text_field :hoge, type:"number", class:"group-input", id:"group-price-two", placeholder:"例）10000" %>円
+         <%= f.text_field :price_two, type:"number", class:"group-input", id:"group-price-two", placeholder:"例）10000" %>円
       </div>
     </div>
     <%# グループ２ %>
@@ -109,23 +107,23 @@
     <%# グループ3 %>
     <div class="group">
       <div class="group-text">
-        <%= f.text_field :hoge, class:"group-input-name", id:"group-name-three", placeholder:"例）グループ3" %>
+        <%= f.text_field :group_name_three, class:"group-input-name", id:"group-name-three", placeholder:"例）グループ3" %>
       </div>
 
       <div class="group-text">
         <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-        <%= f.text_field :hoge, type:"number", class:"group-input", id:"group-people-three", placeholder:"例）1" %>人
+        <%= f.text_field :people_three, type:"number", class:"group-input", id:"group-people-three", placeholder:"例）1" %>人
       </div>
 
       <div class="group-text">
          <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-         <%= f.text_field :hoge, type:"number", class:"group-input", id:"group-ratio-three", placeholder:"例）10" %>%
+         <%= f.text_field :ratio_three, type:"number", class:"group-input", id:"group-ratio-three", placeholder:"例）10" %>%
       </div>
       
       
       <div class="group-text">
          <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-         <%= f.text_field :hoge, type:"number", class:"group-input", id:"group-price-three", placeholder:"例）10000" %>円
+         <%= f.text_field :price_three, type:"number", class:"group-input", id:"group-price-three", placeholder:"例）10000" %>円
       </div>
     </div>
     <%# グループ3 %>
@@ -137,6 +135,12 @@
     </div>
   </div>
     <%# 計算 %>
+
+    <div class="sell-btn-contents">
+      <%= f.submit "保存",class:"sell-btn" %>
+    </div>
+    <%# <div><%= link_to '保存', calculations_path, method: :post,class: "login"</div> %>
+     
   
   <% end %>
 </div>
