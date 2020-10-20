@@ -8,6 +8,7 @@
   <% @calculations.each do |calculation|%>
     <div class="calc-main">
       <%= form_with model: @calculation, url:calculations_path, local: true do |f| %>
+        <div class="created-at"> 保存日時：<%=l calculation.created_at%> </div>
         <div class="calc-title-one">総数</div>
         <div class="total">
           <div class="total-payment">
