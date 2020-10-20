@@ -8,17 +8,24 @@
   display: flex;
 }
 
+.top-page-second-header {
+  width: 100%;
+  padding: 2vh 15vw 3.6vh;
+  display: flex;
+}
+
 .app-name{
   color: black;
   font-weight: bold;
   font-size: 35px;
-  padding-left: 50px;
-  margin-bottom: 13px;
+  padding-left: 85px;
+
 }
 
 .icon {
   width: 2vw;
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 .lists {
@@ -31,28 +38,17 @@
 
 .user-nickname {
   margin-right: 3vw;
-  color: black;
-  font-weight: bold;
-  padding-left:380px;
+  padding-left: 335px;
 }
 
 
-.logout {
-  font-weight: bold;
-}
 
 .login {
-  text-decoration: none;
   margin-right: 3vw;
-  padding-left:380px;
-  font-weight: bold;
+  padding-left: 335px;
 }
 
-.sign-up {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
+
 
 a {
   text-decoration: none;
