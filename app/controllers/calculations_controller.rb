@@ -15,6 +15,7 @@ class CalculationsController < ApplicationController
   end
 
   def index
+    @calculations = Calculation.all
   end
 
   private
