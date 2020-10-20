@@ -1,0 +1,13 @@
+ja:
+  activerecord:
+    attributes:
+        email: Eメール
+        password: パスワード
+        nickname: ニックネーム
+    attributes:
+      calculation:
+        total_payment: 総支払額
+        total_people: 総人数
+        people_two: グループ2(仮)の人数
+        ratio_two:  グループ2(仮)の比率
+        price_two: グループ2(仮)の一人当たりの支払額
