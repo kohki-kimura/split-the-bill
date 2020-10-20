@@ -21,12 +21,14 @@ function calc(){
 
   // 総支払額のフォームを押した時のイベント発火
   total_payment.addEventListener('keyup', () => {
-    let people_value = total_people.value;                    // 総人数
-    let payment_value = total_payment.value;                  // 総支払額
-    let people_two_value = group_people_two.value;            // グループ2の人数
-    let price_two_value = group_price_two.value;              // グループ2の支払額
-    let people_three_value = group_people_three.value;        // グループ3の人数
-    let price_three_value = group_price_three.value;          // グループ3の支払額
+    let people_value = isNaN(total_people.value) ? 0 : Number(total_people.value);                    // 総人数
+    let payment_value = isNaN(total_payment.value) ? 0 : Number(total_payment.value);                 // 総支払額
+    let people_two_value = isNaN(group_people_two.value) ? 0 : Number(group_people_two.value);        // グループ2の人数
+    let price_two_value = isNaN(group_price_two.value) ? 0 : Number(group_price_two.value);           // グループ2の支払額
+    let people_three_value = isNaN(group_people_three.value) ? 0 : Number(group_people_three.value);  // グループ3の人数
+    let price_three_value = isNaN(group_price_three.value) ? 0 : Number(group_price_three.value);     // グループ3の支払額
+
+    if(payment_value){
     
     let people = people_value - people_two_value - people_three_value;
     group_people_one.value = people;                                                            // グループ1の人数(表示)
@@ -41,18 +43,21 @@ function calc(){
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
     indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
+    }
   });
   // のフォームを押した時のイベント発火
 
 
   // 総人数のフォームを押した時のイベント発火
   total_people.addEventListener('keyup', () => {
-    let people_value = total_people.value;                    // 総人数
-    let payment_value = total_payment.value;                  // 総支払額
-    let people_two_value = group_people_two.value;            // グループ2の人数
-    let price_two_value = group_price_two.value;              // グループ2の支払額
-    let people_three_value = group_people_three.value;        // グループ3の人数
-    let price_three_value = group_price_three.value;          // グループ3の支払額
+    let people_value = isNaN(total_people.value) ? 0 : Number(total_people.value);                    // 総人数
+    let payment_value = isNaN(total_payment.value) ? 0 : Number(total_payment.value);                 // 総支払額
+    let people_two_value = isNaN(group_people_two.value) ? 0 : Number(group_people_two.value);        // グループ2の人数
+    let price_two_value = isNaN(group_price_two.value) ? 0 : Number(group_price_two.value);           // グループ2の支払額
+    let people_three_value = isNaN(group_people_three.value) ? 0 : Number(group_people_three.value);  // グループ3の人数
+    let price_three_value = isNaN(group_price_three.value) ? 0 : Number(group_price_three.value);     // グループ3の支払額
+
+    if(people_value){
     
     let people = people_value - people_two_value - people_three_value;
     group_people_one.value = people;                                                            // グループ1の人数(表示)
@@ -67,18 +72,21 @@ function calc(){
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
     indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
+    }
   });
    // 総人数のフォームを押した時のイベント発火
 
 
   // グループ2 人数のフォームを押した時のイベント発火
   group_people_two.addEventListener('keyup', () => {
-    let people_value = total_people.value;                    // 総人数
-    let payment_value = total_payment.value;                  // 総支払額
-    let people_two_value = group_people_two.value;            // グループ2の人数
-    let price_two_value = group_price_two.value;              // グループ2の支払額
-    let people_three_value = group_people_three.value;        // グループ3の人数
-    let price_three_value = group_price_three.value;          // グループ3の支払額
+    let people_value = isNaN(total_people.value) ? 0 : Number(total_people.value);                    // 総人数
+    let payment_value = isNaN(total_payment.value) ? 0 : Number(total_payment.value);                 // 総支払額
+    let people_two_value = isNaN(group_people_two.value) ? 0 : Number(group_people_two.value);        // グループ2の人数
+    let price_two_value = isNaN(group_price_two.value) ? 0 : Number(group_price_two.value);           // グループ2の支払額
+    let people_three_value = isNaN(group_people_three.value) ? 0 : Number(group_people_three.value);  // グループ3の人数
+    let price_three_value = isNaN(group_price_three.value) ? 0 : Number(group_price_three.value);     // グループ3の支払額
+
+    if(people_value && people_two_value){
     
     let people = people_value - people_two_value - people_three_value;
     group_people_one.value = people;                                                            // グループ1の人数(表示)
@@ -93,18 +101,21 @@ function calc(){
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
     indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
+    }
   });
   // グループ2 人数のフォームを押した時のイベント発火
 
 
   // グループ2 支払額のフォームを押した時のイベント発火
   group_price_two.addEventListener('keyup', () => {
-    let people_value = total_people.value;                    // 総人数
-    let payment_value = total_payment.value;                  // 総支払額
-    let people_two_value = group_people_two.value;            // グループ2の人数
-    let price_two_value = group_price_two.value;              // グループ2の支払額
-    let people_three_value = group_people_three.value;        // グループ3の人数
-    let price_three_value = group_price_three.value;          // グループ3の支払額
+    let people_value = isNaN(total_people.value) ? 0 : Number(total_people.value);                    // 総人数
+    let payment_value = isNaN(total_payment.value) ? 0 : Number(total_payment.value);                 // 総支払額
+    let people_two_value = isNaN(group_people_two.value) ? 0 : Number(group_people_two.value);        // グループ2の人数
+    let price_two_value = isNaN(group_price_two.value) ? 0 : Number(group_price_two.value);           // グループ2の支払額
+    let people_three_value = isNaN(group_people_three.value) ? 0 : Number(group_people_three.value);  // グループ3の人数
+    let price_three_value = isNaN(group_price_three.value) ? 0 : Number(group_price_three.value);     // グループ3の支払額
+
+    if(payment_value && price_two_value){
     
     let people = people_value - people_two_value - people_three_value;
     group_people_one.value = people;                                                            // グループ1の人数(表示)
@@ -119,17 +130,20 @@ function calc(){
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
     indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
+    }
   });
   // グループ2 支払額のフォームを押した時のイベント発火
 
   // グループ3 人数のフォームを押した時のイベント発火
   group_people_three.addEventListener('keyup', () => {
-    let people_value = total_people.value;                    // 総人数
-    let payment_value = total_payment.value;                  // 総支払額
-    let people_two_value = group_people_two.value;            // グループ2の人数
-    let price_two_value = group_price_two.value;              // グループ2の支払額
-    let people_three_value = group_people_three.value;        // グループ3の人数
-    let price_three_value = group_price_three.value;          // グループ3の支払額
+    let people_value = isNaN(total_people.value) ? 0 : Number(total_people.value);                    // 総人数
+    let payment_value = isNaN(total_payment.value) ? 0 : Number(total_payment.value);                 // 総支払額
+    let people_two_value = isNaN(group_people_two.value) ? 0 : Number(group_people_two.value);        // グループ2の人数
+    let price_two_value = isNaN(group_price_two.value) ? 0 : Number(group_price_two.value);           // グループ2の支払額
+    let people_three_value = isNaN(group_people_three.value) ? 0 : Number(group_people_three.value);  // グループ3の人数
+    let price_three_value = isNaN(group_price_three.value) ? 0 : Number(group_price_three.value);     // グループ3の支払額
+
+    if(people_value && people_three_value){
     
     let people = people_value - people_two_value - people_three_value;
     group_people_one.value = people;                                                            // グループ1の人数(表示)
@@ -144,17 +158,20 @@ function calc(){
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
     indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
+    }
   });
   // グループ3 人数のフォームを押した時のイベント発火
 
   // グループ3 支払額のフォームを押した時のイベント発火
   group_price_three.addEventListener('keyup', () => {
-    let people_value = total_people.value;                    // 総人数
-    let payment_value = total_payment.value;                  // 総支払額
-    let people_two_value = group_people_two.value;            // グループ2の人数
-    let price_two_value = group_price_two.value;              // グループ2の支払額
-    let people_three_value = group_people_three.value;        // グループ3の人数
-    let price_three_value = group_price_three.value;          // グループ3の支払額
+    let people_value = isNaN(total_people.value) ? 0 : Number(total_people.value);                    // 総人数
+    let payment_value = isNaN(total_payment.value) ? 0 : Number(total_payment.value);                 // 総支払額
+    let people_two_value = isNaN(group_people_two.value) ? 0 : Number(group_people_two.value);        // グループ2の人数
+    let price_two_value = isNaN(group_price_two.value) ? 0 : Number(group_price_two.value);           // グループ2の支払額
+    let people_three_value = isNaN(group_people_three.value) ? 0 : Number(group_people_three.value);  // グループ3の人数
+    let price_three_value = isNaN(group_price_three.value) ? 0 : Number(group_price_three.value);     // グループ3の支払額
+
+    if(payment_value && price_three_value){
     
     let people = people_value - people_two_value - people_three_value;
     group_people_one.value = people;                                                            // グループ1の人数(表示)
@@ -169,6 +186,7 @@ function calc(){
 
     formula = (payment_cell * people) + (price_two_value * people_two_value) + (price_three_value * people_three_value);
     indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
+    }
   });
   // グループ3 支払額のフォームを押した時のイベント発火
 
@@ -183,7 +201,7 @@ function calc(){
     let price_three_value = isNaN(group_price_three.value) ? 0 : Number(group_price_three.value);     // グループ3の支払額
     let ratio_three_value = isNaN(group_ratio_three.value) ? 0 : Number(group_ratio_three.value);     // グループ3の比率
 
-    if (people_two_value) {
+    if (people_value && people_two_value) {
 
       let people = people_value - people_two_value - people_three_value;
       group_people_one.value = people;                                                            // グループ1の人数(表示)
@@ -221,7 +239,7 @@ function calc(){
     let price_three_value = isNaN(group_price_three.value) ? 0 : Number(group_price_three.value);     // グループ3の支払額
     let ratio_three_value = isNaN(group_ratio_three.value) ? 0 : Number(group_ratio_three.value);     // グループ3の比率
 
-    if (people_two_value) {
+    if (people_value && people_two_value) {
 
       let people = people_value - people_two_value - people_three_value;
       group_people_one.value = people;                                                            // グループ1の人数(表示)
@@ -259,7 +277,7 @@ function calc(){
     let price_three_value = isNaN(group_price_three.value) ? 0 : Number(group_price_three.value);     // グループ3の支払額
     let ratio_three_value = isNaN(group_ratio_three.value) ? 0 : Number(group_ratio_three.value);     // グループ3の比率
 
-    if (people_three_value) {
+    if (people_value && people_three_value) {
     let people = people_value - people_two_value - people_three_value;
     group_people_one.value = people;                                                            // グループ1の人数(表示)
 
@@ -275,7 +293,7 @@ function calc(){
       if (people_two_value) {
         let ratio_two = ((ratio_two_value / 100) * payment_value) / people_two_value;
         let ratio_cell_two = Math.ceil(ratio_two/100)*100;
-        group_price_three.value = ratio_cell_three;                                                     // グループ2の支払額(表示)
+        group_price_two.value = ratio_cell_two;                                                     // グループ2の支払額(表示)
       }
   
     group_ratio_one.value = 100  - ratio_three_value - ratio_two_value;                         // グループ1の比率(表示)
@@ -297,7 +315,7 @@ function calc(){
     let price_three_value = isNaN(group_price_three.value) ? 0 : Number(group_price_three.value);     // グループ3の支払額
     let ratio_three_value = isNaN(group_ratio_three.value) ? 0 : Number(group_ratio_three.value);     // グループ3の比率
 
-    if (people_three_value) {
+    if (people_value && people_three_value) {
     let people = people_value - people_two_value - people_three_value;
     group_people_one.value = people;                                                            // グループ1の人数(表示)
 
@@ -313,7 +331,7 @@ function calc(){
       if (people_two_value) {
         let ratio_two = ((ratio_two_value / 100) * payment_value) / people_two_value;
         let ratio_cell_two = Math.ceil(ratio_two/100)*100;
-        group_price_three.value = ratio_cell_three;                                                     // グループ2の支払額(表示)
+        group_price_two.value = ratio_cell_two;                                                     // グループ2の支払額(表示)
       }
   
     group_ratio_one.value = 100  - ratio_three_value - ratio_two_value;                         // グループ1の比率(表示)
