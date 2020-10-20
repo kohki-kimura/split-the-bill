@@ -18,7 +18,7 @@
          <%= f.text_field :total_people, type:"number", class:"total-people-input", id:"total-people", readonly: true%>人
       </div>
     </div>
-      <div class="calc-title-two">計算</div>
+      <div class="calc-title-two">計算結果</div>
         <div class="description">一人あたりの支払額は十の位で切り上げ、比率は小数点第二位で切り捨てを行なっています。</div>
     <%# 情報 %>
   
@@ -80,17 +80,17 @@
         </div>
 
         <div class="group-text">
-          <span class="indispensable">※</span>
+        <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
           <%= f.text_field :people_two, type:"number", class:"group-input", id:"group-people-two", readonly: true  %>人
         </div>
 
         <div class="group-text">
-          <span class="indispensable">※</span>
+        <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
           <%= f.text_field :ratio_two, type:"decimal", class:"group-input", id:"group-ratio-two", readonly: true  %>%
         </div>
 
         <div class="group-text">
-          <span class="indispensable">※</span>
+        <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
           <%= f.text_field :price_two, type:"number", class:"group-input", id:"group-price-two", readonly: true  %>円
         </div>
       </div>
@@ -123,7 +123,7 @@
     <%# あまり %>
       <div class="group-invisible">
          <span class="indivisible-number">あまり</span>
-         <%= f.text_field :indivisible_number, type:"number", class:"group-input-one", id:"indivisible-number", readonly: true%>円
+         <%= f.text_field :indivisible_number, type:"number", class:"group-input", id:"indivisible-number", readonly: true%>円
       </div>
     <%# あまり %>
   
