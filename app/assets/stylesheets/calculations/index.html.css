@@ -56,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 5px solid dimgray;
+  border-bottom: 5px solid gray;
 }
 
 .total-payment {
@@ -82,6 +82,16 @@
   width: 130px;
   height: 35px;
 }
+
+
+.flash {
+  color: gray;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
 
 /* 情報 */
 
@@ -178,3 +188,5 @@
 .black-btn:hover {
   background: dimgray;
 }
+
+

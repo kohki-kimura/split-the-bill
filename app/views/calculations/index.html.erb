@@ -6,6 +6,15 @@
   <%# 情報 %>
   <div class="calc-main">
    <%= form_with model: @calculation, url:calculations_path, local: true do |f| %>
+
+   <%# フラッシュメッセージ %>
+   <% flash.each do |key, value| %>
+      <div class="flash">
+        <%= value %>
+      </div>
+    <% end %>
+   <%# フラッシュメッセージ %>
+
    <div class="calc-title-one">総数入力</div>
    <div class="indispensable-description">必須項目です。</div>
    <div class="total">
@@ -137,6 +146,5 @@
     <div class="black-btn-index">
       <%= f.submit "保存",class:"black-btn" %>
     </div>
-  
   <% end %>
 </div>
