@@ -3,7 +3,6 @@
 }
 
 .top-page-header {
-  width: 100%;
   padding: 2vh 15vw;
   display: flex;
 }
@@ -19,11 +18,10 @@
   font-weight: bold;
   font-size: 35px;
   padding-left: 80px;
-
 }
 
 .icon {
-  width: 2vw;
+  width: 30px;
   margin-left: 5px;
   margin-top: 5px;
 }
@@ -33,6 +31,7 @@
   list-style: none;
   font-weight: bold;
   margin-top: 25px;
+  width: 100%;
 }
 
 
@@ -53,4 +52,50 @@
 a {
   text-decoration: none;
   color: black;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+  .top-page-header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .app-name{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .icon {
+    width: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  .lists {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    margin-top: 25px;
+    width: 100%;
+  }
+  
+  
+  .user-nickname {
+    margin-right: 3vw;
+  
+  }
+  
+  .deta-save{
+    margin-right: 3vw;
+  }
+  
+  .login {
+    margin-right: 3vw;
+
+  }
 }
