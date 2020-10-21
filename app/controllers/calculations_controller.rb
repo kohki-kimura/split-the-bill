@@ -15,7 +15,7 @@ class CalculationsController < ApplicationController
   end
 
   def index
-    @calculations = Calculation.all
+    @calculations = Calculation.all.order('created_at DESC')
   end
 
   def destroy
