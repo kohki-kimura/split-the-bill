@@ -13,59 +13,97 @@
   display: flex;
 }
 
+.header{
+  white-space: nowrap;
+}
+
 .app-name{
   color: black;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 200%;
   padding-left: 80px;
+  padding-top: 0.2vh;
 }
 
 .icon {
   width: 30px;
-  margin-left: 5px;
-  margin-top: 5px;
+  padding-top: 10px;
 }
 
 .lists {
-  display: flex;
   list-style: none;
   font-weight: bold;
+  width: 100vw;
   margin-top: 25px;
-  width: 100%;
+  padding-right: 80px;
+  display: flex;
+  justify-content: flex-end;
+  white-space: nowrap;
 }
 
 
 .user-nickname {
   margin-right: 3vw;
-  padding-left: 245px;
 }
 
-.deta-save{
+.data-save{
   margin-right: 3vw;
 }
-
-
 
 .login {
   margin-right: 3vw;
-  padding-left: 335px;
 }
-
-
 
 a {
   text-decoration: none;
   color: black;
 }
 
+/* タブレット */
+
+@media (max-width: 1000px) {
+  .app-name{
+    font-size: 25px;
+    padding-left: 0;
+  }
+
+  .icon {
+    width: 20px;
+  }
+
+  .lists {
+    font-size: 13px;
+    margin-top: 20px;
+    padding-right: 0;
+  }
+  
+  
+  .user-nickname {
+    margin-right: 3vw;
+  }
+  
+  .deta-save{
+    margin-right: 3vw;
+  }
+  
+  .login {
+    margin-right: 3vw;
+
+  }
+}
+
+/* タブレット */
 
 
+
+/* スマートフォン */
 
 
 @media (max-width: 500px) {
   .top-page-header {
     display: flex;
     justify-content: space-around;
+    width: 100%;
   }
 
   .app-name{
@@ -75,7 +113,7 @@ a {
   }
 
   .icon {
-    width: 20px;
+    width: 5%;
     margin-left: 5px;
     margin-top: 5px;
   }
@@ -86,6 +124,7 @@ a {
     font-weight: bold;
     margin-top: 25px;
     width: 100%;
+    font-size:5px;
   }
   
   
@@ -103,3 +142,5 @@ a {
 
   }
 }
+
+/* スマートフォン */

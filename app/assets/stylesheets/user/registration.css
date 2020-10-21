@@ -99,3 +99,25 @@
   list-style: none;
   color: red;
 }
+
+/* タブレット */
+
+@media (max-width: 1000px) {
+
+  .form-wrap {
+    width: 98.5%;
+  }
+
+  .form-text {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 53px;
+  }
+
+  .input-default {
+    font-size:15px;
+    line-height: 27px;
+  }
+}
+
+/* タブレット */

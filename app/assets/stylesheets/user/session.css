@@ -8,11 +8,6 @@
   padding: 10vh;
 }
 
-.form-wrap {
-  width: 70%;
-  background-color: white;
-}
-
 .error_message{
   text-align: center;
   list-style: none;

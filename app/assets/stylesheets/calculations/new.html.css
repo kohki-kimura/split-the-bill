@@ -189,3 +189,24 @@
 }
 
 
+/* タブレット */
+
+
+@media (max-width: 1000px) {
+  .calc-main {
+    background-color: #FFF;
+    width: 80vw;
+    min-width: 450px;
+    padding: 10vh;
+    margin: 0 0 10vh 0;
+  }
+
+  .group-input {
+    width: 105px;
+    height: 35px;
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+
+/* タブレット */
