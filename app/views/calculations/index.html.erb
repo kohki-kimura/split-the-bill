@@ -7,7 +7,7 @@
   <% @calculations.each do |calculation|%>
     <% if user_signed_in? && current_user.id == calculation.user_id%>
       <div class="calc-main">
-        <%= form_with model: @calculation, url:calculations_path, local: true do |f| %>
+        <%= form_with url:calculation_path(calculation), method: :delete, local: true do |f| %>
           <div class="created-at"> 保存日時：<%=l calculation.created_at%> </div>
           <div class="calc-title-one">総数</div>
           <div class="total">

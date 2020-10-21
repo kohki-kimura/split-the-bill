@@ -18,6 +18,15 @@ class CalculationsController < ApplicationController
     @calculations = Calculation.all
   end
 
+  def destroy
+    @calculation = Calculation.find(params[:id])
+    if @calculation.destroy
+      redirect_to calculations_path(current_user)
+    else
+      render :index
+    end
+  end
+
   private
 
   def calculation_params
