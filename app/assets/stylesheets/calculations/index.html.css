@@ -3,3 +3,19 @@
   font-weight: bold;
   padding-bottom: 20px;
 }
+
+.red-btn {
+  width: 30%;
+  background: crimson;
+  border: 1px solid crimson;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.red-btn:hover {
+  background: palevioletred;
+  border: 1px solid palevioletred;
+}
