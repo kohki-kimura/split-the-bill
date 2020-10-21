@@ -72,7 +72,7 @@
 以下の順でターミナルに入力してください。
 
 ```
-git clone https://github.com/kohki-kimura/-the-bill.git #アプリをclone
+git clone https://github.com/kohki-kimura/warikan-com.git #アプリをclone
 
 % cd #ホームディレクトリに移動
 % cd warikan-com #warikan-comディレクトリに移動

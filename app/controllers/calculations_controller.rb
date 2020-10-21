@@ -15,7 +15,16 @@ class CalculationsController < ApplicationController
   end
 
   def index
-    @calculations = Calculation.all
+    @calculations = Calculation.all.order('created_at DESC')
+  end
+
+  def destroy
+    @calculation = Calculation.find(params[:id])
+    if @calculation.destroy
+      redirect_to calculations_path(current_user)
+    else
+      render :index
+    end
   end
 
   private

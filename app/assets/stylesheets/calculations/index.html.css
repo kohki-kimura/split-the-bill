@@ -3,3 +3,31 @@
   font-weight: bold;
   padding-bottom: 20px;
 }
+
+.red-btn {
+  width: 30%;
+  background: crimson;
+  border: 1px solid crimson;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.red-btn:hover {
+  background: palevioletred;
+  border: 1px solid palevioletred;
+}
+@media (max-width: 500px) {
+
+  .created-at{
+    text-align: center;
+  }
+
+  .red-btn {
+    line-height: 28px;
+    margin-top: 40px;
+  }
+
+}

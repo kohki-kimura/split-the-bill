@@ -7,7 +7,7 @@
   <% @calculations.each do |calculation|%>
     <% if user_signed_in? && current_user.id == calculation.user_id%>
       <div class="calc-main">
-        <%= form_with model: @calculation, url:calculations_path, local: true do |f| %>
+        <%= form_with url:calculation_path(calculation), method: :delete, local: true do |f| %>
           <div class="created-at"> 保存日時：<%=l calculation.created_at%> </div>
           <div class="calc-title-one">総数</div>
           <div class="total">
@@ -25,29 +25,23 @@
           <%# 情報 %>
         
           <%# 計算 %>
-            <div class="group">
-              <div class="group-text-one">
-                <span class="group-name">&nbsp;グループ名</span>
-              </div>
-
-              <div class="group">
-                <div class="group-text-one">
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;人数</span>
-                </div>
-              </div>
-
-              <div class="group">
-                <div class="group-text-one">
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;比率</span>
-                </div>
-              </div>
-
-              <div class="group">
-                <div class="group-text-pne">
-                  <span>&nbsp;&nbsp;一人あたり</span>
-                </div>
-              </div>
+          <div class="group">
+            <div class="group-text-one">
+              <span>グループ名</span>
             </div>
+
+            <div class="group-text-one">
+              <span>&nbsp;&nbsp;人数</span>
+            </div>
+
+            <div class="group-text-one">
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;比率</span>
+            </div>
+
+            <div class="group-text-one">
+              <span>&nbsp;&nbsp;&nbsp;一人あたり</span>
+            </div>
+          </div>
 
           <%# グループ１ %>
         
@@ -131,6 +125,10 @@
           <%# あまり %>
       
           <%# 計算 %>
+
+          <div class="btn-contents">
+          <%= f.submit "削除",class:"red-btn" %>
+          </div>
         <% end %>
       </div>
     <% end %>

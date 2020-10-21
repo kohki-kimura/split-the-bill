@@ -118,6 +118,13 @@
   justify-content: space-around;
 }
 
+.group-one {
+  padding: 20px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .group-text {
   padding-bottom: 20px;
   display: flex;
@@ -153,21 +160,22 @@
   padding-right: 10px;
 }
 
+
 .group-invisible {
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-right: 33px;
 }
 
-.indivisible-number{
+.invisible-number{
   width: 60px;
-  padding: 10px 0 10px;
+  padding: 10px 10px  10px 0;
 }
 
 /* /計算 */
 
-.black-btn-contents {
+.btn-contents {
   display: flex;
   justify-content: center;
 }
@@ -185,6 +193,156 @@
 
 .black-btn:hover {
   background: dimgray;
+  border: 1px solid dimgray;
 }
 
 
+/* タブレット */
+
+
+@media (max-width: 1000px) {
+  .calc-header {
+    padding: 2vh 0;
+  }
+
+  .total-payment {
+    white-space: nowrap;
+  }
+
+  .total-people {
+    white-space: nowrap;
+  }
+
+  .group-input {
+    width: 105px;
+    height: 35px;
+    text-align: right;
+    padding-right: 10px; 
+  }
+
+  .group-text{
+    padding-right: 5px;
+  }
+
+  .group-text-one {
+    white-space: nowrap;
+    padding:0 38px 0 30px;
+  }
+
+  .group-invisible {
+    justify-content: center;
+  }
+}
+
+/* タブレット */
+
+
+/* スマートフォン */
+
+
+@media (max-width: 500px) {
+
+  .calc-main{
+    padding-top:3vh;
+    padding-bottom: 3vh;
+    margin: 0 0 4vh 0;
+  }
+
+  .calc-title-one {
+    font-size: 17px;
+    padding: 0 0 10px 0;
+  }
+  
+  .calc-title-two {
+    font-size: 17px;
+    padding: 20px 0 10px 0;
+  }
+
+  .total-payment {
+    font-size: 13px;
+    white-space: nowrap;
+    padding: 5px 10px 0;
+  }
+
+  .total-people {
+    font-size: 13px;
+    white-space: nowrap;
+    padding: 5px 10px 0;
+  }
+
+  .total-payment-input {
+    width: 100px;
+    font-size: 10px;
+  }
+  
+  .total-people-input {
+    width: 100px;
+    font-size: 10px;
+  }
+
+
+
+  .calc-description{
+    font-size: 15px;
+  }
+
+  .indispensable-description{
+    font-size: 12px;
+  }
+
+  .description{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .group {
+    padding: 0 10px 10px;
+  }
+
+  .group-text-one {
+    font-size: 13px;
+    white-space: nowrap;
+    padding:0 33px 0 17px;
+    line-height: 5px;
+  }
+  
+  .group-input {
+    width: 80px;
+    padding-right: 10px;
+    font-size: 10px;
+  }
+  
+  .group-input-one {
+    width: 80px;
+    padding-right: 10px;
+    background-color: whitesmoke;
+    font-size: 10px;
+  }
+  
+  .group-input-name {
+    width: 90px;
+    padding-right: 10px;
+    font-size: 10px;
+  }
+
+  .group-text{
+    padding-right: 5px;
+  }
+
+  .group-invisible {
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  .invisible-number{
+    padding-right: 0;
+  }
+  
+  .black-btn {
+    line-height: 28px;
+    margin-top: 40px;
+  }
+
+}
+
+/* スマートフォン */
