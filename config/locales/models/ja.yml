@@ -14,3 +14,6 @@ ja:
         people_two: グループ2(仮)の人数
         ratio_two:  グループ2(仮)の比率
         price_two: グループ2(仮)の一人当たりの支払額
+  time:
+    formats:
+       default: "%Y/%m/%d %H:%M"

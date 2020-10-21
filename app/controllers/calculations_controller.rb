@@ -1,7 +1,7 @@
 class CalculationsController < ApplicationController
   before_action :authenticate_user!, only: [:create]
 
-  def index    
+  def new    
     @calculation = Calculation.new
   end
 
@@ -10,8 +10,12 @@ class CalculationsController < ApplicationController
     if @calculation.save
       redirect_to root_path, notice: '計算内容が保存されました。'
     else
-      render :index
+      render :new
     end
+  end
+
+  def index
+    @calculations = Calculation.all
   end
 
   private
