@@ -64,7 +64,7 @@ a {
 @media (max-width: 1000px) {
   .app-name{
     font-size: 25px;
-    padding-left: 0;
+    padding-left: 50px;
   }
 
   .icon {
@@ -74,15 +74,14 @@ a {
   .lists {
     font-size: 13px;
     margin-top: 20px;
-    padding-right: 0;
+    padding-right: 50px;
   }
-  
   
   .user-nickname {
     margin-right: 3vw;
   }
   
-  .deta-save{
+  .data-save{
     margin-right: 3vw;
   }
   
@@ -100,46 +99,25 @@ a {
 
 
 @media (max-width: 500px) {
-  .top-page-header {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
 
+  .top-page-header {
+    padding: 1vh;
+  }
+ 
   .app-name{
-    color: black;
-    font-weight: bold;
     font-size: 20px;
+    padding-left: 20px;
+    padding-top: 0.2vh;
   }
 
   .icon {
-    width: 5%;
-    margin-left: 5px;
-    margin-top: 5px;
+    width: 15px;
+    padding-top: 10px;
   }
 
   .lists {
-    display: flex;
-    list-style: none;
-    font-weight: bold;
-    margin-top: 25px;
-    width: 100%;
-    font-size:5px;
-  }
-  
-  
-  .user-nickname {
-    margin-right: 3vw;
-  
-  }
-  
-  .deta-save{
-    margin-right: 3vw;
-  }
-  
-  .login {
-    margin-right: 3vw;
-
+    padding-right: 20px;
+    margin-top: 15px;
   }
 }
 

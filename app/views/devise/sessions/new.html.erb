@@ -1,34 +1,40 @@
 <%= render "shared/header" %>
 
-<div class='session-main'>
-  <%= form_with model: @user, url:user_session_path, class: 'form-wrap', local: true do |f| %>
-    <div class='form-header'>
-      <h1 class='form-header-text'>
-        会員情報入力
-      </h1>
-    </div>
+<div class="calc-contents">
+<header class="calc-header">
+</header>
 
-    <div class="error_message">
-    <%- flash.each do |name, msg| -%>
-    <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
-    <% end %>  
-    </div>
+  <div class='calc-main'>
+    <%= form_with model: @user, url:user_session_path, local: true do |f| %>
 
-    <div class="form-group">
-      <div class='form-text-wrap'>
-        <label class="form-text">メールアドレス<span class="indispensable">※</span></label>
+      <div class='under-line'>
+        <h1 class='calc-title-one'>
+          会員情報入力
+        </h1>
       </div>
-      <%= f.email_field :email, class:"input-default", id:"email", placeholder:"メールアドレスを入力", autofocus: true %>
-    </div>
-    <div class="form-group">
-      <div class='form-text-wrap'>
-        <label class="form-text">パスワード<span class="indispensable">※</span></label>
+
+      <div class="error-message">
+      <%- flash.each do |name, msg| -%>
+      <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+      <% end %>  
       </div>
-      <%= f.password_field :password, class:"input-default", id:"password", placeholder:"パスワードを入力" %>
-      <div class='register-btn'>
-        <%= f.submit "ログイン" ,class:"register-black-btn" %>
+
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">メールアドレス<span class="indispensable">※</span></label>
+        </div>
+        <%= f.email_field :email, class:"input-default", id:"email", placeholder:"メールアドレスを入力", autofocus: true %>
       </div>
-    </div>
-  <% end %>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">パスワード<span class="indispensable">※</span></label>
+        </div>
+        <%= f.password_field :password, class:"input-default", id:"password", placeholder:"パスワードを入力" %>
+        <div class='register-btn'>
+          <%= f.submit "ログイン" ,class:"register-black-btn" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
  </div>
 

@@ -19,4 +19,15 @@
   background: palevioletred;
   border: 1px solid palevioletred;
 }
+@media (max-width: 500px) {
 
+  .created-at{
+    text-align: center;
+  }
+
+  .red-btn {
+    line-height: 28px;
+    margin-top: 40px;
+  }
+
+}
