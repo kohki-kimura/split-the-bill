@@ -314,20 +314,20 @@
   }
   
   .group-input {
-    width:60px;
+    width:50px;
     padding-right: 10px;
     font-size: 10px;
   }
   
   .group-input-one {
-    width: 60px;
+    width: 50px;
     padding-right: 10px;
     background-color: whitesmoke;
     font-size: 10px;
   }
   
   .group-input-name {
-    width: 70px;
+    width: 60px;
     padding-right: 10px;
     font-size: 10px;
   }
