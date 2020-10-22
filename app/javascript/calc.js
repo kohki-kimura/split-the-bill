@@ -36,11 +36,11 @@ function calc(){
       let payment_cell = Math.ceil(payment/100)*100;
       group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
-        if(group_ratio_two.value){
+        if(group_ratio_two.value || price_two_value){
         group_ratio_two.value = Math.floor((((price_two_value * people_two_value) / payment_value) * 100) * 100)/100;         // グループ2の比率(表示)
         }
 
-        if(group_ratio_three.value){
+        if(group_ratio_three.value || price_three_value){
         group_ratio_three.value = Math.floor((((price_three_value * people_three_value) / payment_value) * 100) * 100)/100;   // グループ3の比率(表示)
         }
       
@@ -70,11 +70,11 @@ function calc(){
       let payment_cell = Math.ceil(payment/100)*100;
       group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
-        if(group_ratio_two.value){
+        if(group_ratio_two.value || price_two_value){
         group_ratio_two.value = Math.floor((((price_two_value * people_two_value) / payment_value) * 100) * 100)/100;         // グループ2の比率(表示)
         }
 
-        if(group_ratio_three.value){
+        if(group_ratio_three.value || price_three_value){
         group_ratio_three.value = Math.floor((((price_three_value * people_three_value) / payment_value) * 100) * 100)/100;   // グループ3の比率(表示)
         }
       
@@ -104,11 +104,11 @@ function calc(){
       let payment_cell = Math.ceil(payment/100)*100;
       group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
-        if(group_ratio_two.value){
+        if(group_ratio_two.value || price_two_value){
         group_ratio_two.value = Math.floor((((price_two_value * people_two_value) / payment_value) * 100) * 100)/100;         // グループ2の比率(表示)
         }
 
-        if(group_ratio_three.value){
+        if(group_ratio_three.value || price_three_value){
         group_ratio_three.value = Math.floor((((price_three_value * people_three_value) / payment_value) * 100) * 100)/100;   // グループ3の比率(表示)
         }
       
@@ -138,11 +138,11 @@ function calc(){
       let payment_cell = Math.ceil(payment/100)*100;
       group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
   
-        if(group_ratio_two.value){
+        if(group_ratio_two.value || price_two_value){
         group_ratio_two.value = Math.floor((((price_two_value * people_two_value) / payment_value) * 100) * 100)/100;         // グループ2の比率(表示)
         }
   
-        if(group_ratio_three.value){
+        if(group_ratio_three.value || price_three_value){
         group_ratio_three.value = Math.floor((((price_three_value * people_three_value) / payment_value) * 100) * 100)/100;   // グループ3の比率(表示)
         }
       
@@ -172,11 +172,11 @@ function calc(){
       let payment_cell = Math.ceil(payment/100)*100;
       group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
   
-        if(group_ratio_two.value){
+        if(group_ratio_two.value || price_two_value){
         group_ratio_two.value = Math.floor((((price_two_value * people_two_value) / payment_value) * 100) * 100)/100;         // グループ2の比率(表示)
         }
   
-        if(group_ratio_three.value){
+        if(group_ratio_three.value || price_three_value){
         group_ratio_three.value = Math.floor((((price_three_value * people_three_value) / payment_value) * 100) * 100)/100;   // グループ3の比率(表示)
         }
       
@@ -205,11 +205,11 @@ function calc(){
       let payment_cell = Math.ceil(payment/100)*100;
       group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
   
-        if(group_ratio_two.value){
+        if(group_ratio_two.value || price_two_value){
         group_ratio_two.value = Math.floor((((price_two_value * people_two_value) / payment_value) * 100) * 100)/100;         // グループ2の比率(表示)
         }
   
-        if(group_ratio_three.value){
+        if(group_ratio_three.value || price_three_value){
         group_ratio_three.value = Math.floor((((price_three_value * people_three_value) / payment_value) * 100) * 100)/100;   // グループ3の比率(表示)
         }
       
