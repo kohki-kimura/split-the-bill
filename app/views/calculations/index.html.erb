@@ -3,9 +3,17 @@
 <div class="calc-contents">
   <header class="calc-header">
   </header>
+  
   <%# 情報 %>
+  <% if @calculations.length == 0 %>
+          <div class="calc-main-history">
+              <div class="calc-title-one">計算履歴がありません</div>
+       
+          </div>
+  <%end%>
   <% @calculations.each do |calculation|%>
-    <% if user_signed_in? && current_user.id == calculation.user_id &&  @calculations.length != 0 %>
+
+    <% if user_signed_in? && current_user.id == calculation.user_id %>
             <div class="calc-main">
               <%= form_with url:calculation_path(calculation), method: :delete, local: true do |f| %>
                 <div class="created-at"> 保存日時：<%=l calculation.created_at%> </div>
@@ -132,11 +140,7 @@
               <%end%>
             </div>
 
-          <%else%>
-          <div class="calc-main-history">
-              <div class="calc-title-one">計算履歴がありません。</div>
-              <%break%>
-          </div>
+          
     <% end %>
   <% end %>
 </div>
