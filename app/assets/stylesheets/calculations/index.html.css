@@ -32,4 +32,9 @@
     width: 30%;
   }
 
+  .red-btn:hover {
+    background: crimson;
+    border: 0;
+  }
+
 }

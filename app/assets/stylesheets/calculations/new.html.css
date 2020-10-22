@@ -28,6 +28,8 @@
   padding: 10vh;
   margin: 20vh 0 40vh;
   white-space: nowrap;
+  display: flex;
+  justify-content: center;
 }
 
 .calc-title-one {
