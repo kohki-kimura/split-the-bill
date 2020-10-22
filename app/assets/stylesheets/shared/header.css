@@ -10,19 +10,20 @@
 .top-page-second-header {
   width: 100%;
   padding: 2vh 15vw 3.6vh;
-  display: flex;
+  
 }
 
-.header{
+.header-contents{
   white-space: nowrap;
+  display: flex;
+  width: 100%;
 }
 
 .app-name{
   color: black;
   font-weight: bold;
-  font-size: 200%;
+  font-size: 30px;
   padding-left: 80px;
-  padding-right: 2px;
 }
 
 .icon {
@@ -113,7 +114,6 @@ a {
   .lists {
     padding-right: 20px;
     font-size: 12px;
-    line-height: 12px;
   }
 }
 
