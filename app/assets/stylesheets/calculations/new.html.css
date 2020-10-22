@@ -252,6 +252,8 @@
 @media (max-width: 500px) {
 
   .calc-main{
+    width: 80%;
+    min-width: 450px;
     padding-top:3vh;
     padding-bottom: 3vh;
     margin: 0 0 4vh 0;
@@ -310,7 +312,7 @@
   .group-type {
     font-size: 13px;
     white-space: nowrap;
-    padding:0 20px 0 10px;
+    padding:0 22px 0 8px;
     line-height: 5px;
   }
   
