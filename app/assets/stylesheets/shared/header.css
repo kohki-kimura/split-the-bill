@@ -5,18 +5,13 @@
 .top-page-header {
   padding: 2vh 15vw;
   display: flex;
+  white-space: nowrap;
 }
 
 .top-page-second-header {
   width: 100%;
   padding: 2vh 15vw 3.6vh;
   
-}
-
-.header-contents{
-  white-space: nowrap;
-  display: flex;
-  width: 100%;
 }
 
 .app-name{
@@ -75,11 +70,11 @@ a {
   }
   
   .user-nickname {
-    margin-right: 3vw;
+    margin-right: 1.5vw;
   }
   
   .data-save{
-    margin-right: 3vw;
+    margin-right: 1.5vw;
   }
   
   .login {
@@ -99,11 +94,14 @@ a {
 
   .top-page-header {
     padding: 0.5vh 0;
+    display: flex;
+    align-items: center;
   }
  
   .app-name{
     font-size: 20px;
     padding-left: 20px;
+    padding-top: 1px;
   }
 
   .icon {
