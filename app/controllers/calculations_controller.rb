@@ -8,7 +8,7 @@ class CalculationsController < ApplicationController
   def create    
     @calculation = Calculation.new(calculation_params)
     if @calculation.save
-      redirect_to root_path, notice: '計算内容が保存されました。'
+      redirect_to root_path, notice: '計算内容を保存しました。'
     else
       render :new
     end

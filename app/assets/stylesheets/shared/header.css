@@ -22,19 +22,17 @@
   font-weight: bold;
   font-size: 200%;
   padding-left: 80px;
-  padding-top: 0.2vh;
+  padding-right: 2px;
 }
 
 .icon {
   width: 30px;
-  padding-top: 10px;
 }
 
 .lists {
   list-style: none;
   font-weight: bold;
   width: 100vw;
-  margin-top: 25px;
   padding-right: 80px;
   display: flex;
   justify-content: flex-end;
@@ -62,19 +60,17 @@ a {
 /* タブレット */
 
 @media (max-width: 1000px) {
-  .app-name{
-    font-size: 25px;
-    padding-left: 50px;
+  
+  .top-page-header {
+    padding: 2vh 0;
   }
 
-  .icon {
-    width: 20px;
+  .app-name{
+    padding-left: 80px;
   }
 
   .lists {
-    font-size: 13px;
-    margin-top: 20px;
-    padding-right: 50px;
+    padding-right: 80px;
   }
   
   .user-nickname {
@@ -101,23 +97,23 @@ a {
 @media (max-width: 500px) {
 
   .top-page-header {
-    padding: 1vh;
+    padding: 0.5vh 0;
   }
  
   .app-name{
     font-size: 20px;
     padding-left: 20px;
-    padding-top: 0.2vh;
   }
 
   .icon {
     width: 15px;
-    padding-top: 10px;
+    padding-top: 5.5px;
   }
 
   .lists {
     padding-right: 20px;
-    margin-top: 15px;
+    font-size: 12px;
+    line-height: 12px;
   }
 }
 
