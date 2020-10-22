@@ -38,47 +38,54 @@
                 <%# 情報 %>
               
                 <%# 計算 %>
-                <div class="group">
-                  <div class="group-type">
-                    <span>グループ名</span>
-                  </div>
-
-                  <div class="group-type">
-                    <span>&nbsp;&nbsp;人数</span>
-                  </div>
-
-                  <div class="group-type">
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;比率</span>
-                  </div>
-
-                  <div class="group-type">
-                    <span>&nbsp;&nbsp;&nbsp;一人あたり</span>
-                  </div>
-                </div>
-
+  
                 <%# グループ１ %>
+                
+
+                
               
-                  <div class="group">
+                <div class="group">
+                  <div>
+                    <div class="group-type">
+                      <span>グループ名</span>
+                    </div>
+                    
                     <div class="group-text">
                       <span class="group-name"></span>
-                      <%= f.text_field :hoge, value:calculation.group_name_one, class:"group-input-name", readonly: true  %>
+                      <%= f.text_field :hoge, value:calculation.group_name_one, class:"group-input-name", id:"group-name-one", placeholder:"グループ１" %>
                     </div>
+                  </div>
 
+                  <div>
+                    <div class="group-type">
+                      <span>人数</span>
+                    </div>
+                    <div class="group-text">
+                      <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
+                      <%= f.text_field :hoge, value:calculation.people_one, class:"group-input-one", id:"group-people-one", readonly: true %>人
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="group-type">
+                      <span>比率</span>
+                    </div>
                     <div class="group-text">
                     <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-                      <%= f.text_field :hoge, value:calculation.people_one, class:"group-input-one", readonly: true %>人
+                    <%= f.text_field :hoge, value:calculation.ratio_one, class:"group-input-one", id:"group-ratio-one", readonly: true %>%
                     </div>
+                  </div>
 
-                    <div class="group-text">
-                    <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-                    <%= f.text_field :hoge, value:calculation.ratio_one, class:"group-input-one", readonly: true %>%
+                  <div>
+                    <div class="group-type">
+                      <span>一人あたり</span>
                     </div>
-
                     <div class="group-text">
                     <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
                     <%= f.text_field :hoge, value:calculation.price_one, class:"group-input-one-price", id:"group-price-one", readonly: true %>円
                     </div>
                   </div>
+                </div>
 
                 <%# グループ１ %>
 
