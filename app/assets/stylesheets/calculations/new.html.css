@@ -28,10 +28,6 @@
   padding: 10vh;
   margin: 20vh 0 40vh;
   white-space: nowrap;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .calc-title-one {
@@ -294,8 +290,8 @@
     margin: 0 0 4vh 0;
   }
 
-  .calc-main-history {
-    width: 90%;
+  .calc-main-history{
+    width: 80vw;
   }
 
   .calc-title-one {
