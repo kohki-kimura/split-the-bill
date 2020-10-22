@@ -19,6 +19,7 @@
   background: palevioletred;
   border: 1px solid palevioletred;
 }
+
 @media (max-width: 500px) {
 
   .created-at{

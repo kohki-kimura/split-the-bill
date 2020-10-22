@@ -293,12 +293,15 @@
   .calc-title-one {
     font-size: 17px;
     padding: 0 0 10px 0;
+    text-align: center;
   }
+    
   
   .calc-title-two {
     font-size: 17px;
     padding: 20px 0 10px 0;
   }
+
 
   .total-payment {
     font-size: 13px;
