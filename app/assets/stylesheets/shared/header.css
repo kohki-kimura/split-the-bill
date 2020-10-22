@@ -10,11 +10,13 @@
 .top-page-second-header {
   width: 100%;
   padding: 2vh 15vw 3.6vh;
-  display: flex;
+  
 }
 
-.header{
+.header-contents{
   white-space: nowrap;
+  display: flex;
+  width: 100%;
 }
 
 .app-name{
@@ -22,11 +24,10 @@
   font-weight: bold;
   font-size: 30px;
   padding-left: 80px;
-  padding-right: 2px;
 }
 
 .icon {
-  height: 30px;
+  width: 30px;
 }
 
 .lists {
@@ -107,13 +108,12 @@ a {
 
   .icon {
     width: 15px;
-    padding-top: 5.5px;
+    padding-top: 10px;
   }
 
   .lists {
     padding-right: 20px;
     font-size: 12px;
-    line-height: 12px;
   }
 }
 
