@@ -18,6 +18,7 @@
 .calc-main {
   background-color: #FFF;
   width: 61.5vw;
+  min-width: 450px;
   padding: 10vh;
   margin: 0 0 10vh 0;
 }
@@ -173,8 +174,7 @@
 }
 
 .black-btn {
-  width: 25%;
-  height:50px;
+  width: 30%;
   background: black;
   border: 1px solid black;
   color: #fff;
@@ -197,6 +197,7 @@
   .calc-main {
     background-color: #FFF;
     width: 90vw;
+    min-width: 450px;
     padding: 10vh;
     margin: 0 0 10vh 0;
   }
@@ -251,8 +252,10 @@
 @media (max-width: 500px) {
 
   .calc-main{
-    width: 70vw;
-    padding: 3vh 5vh;
+    width: 80%;
+    min-width: 450px;
+    padding-top:3vh;
+    padding-bottom: 3vh;
     margin: 0 0 4vh 0;
   }
 

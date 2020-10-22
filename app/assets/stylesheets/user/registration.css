@@ -73,8 +73,9 @@
 .register-black-btn {
   width: 100%;
   background: black;
-  border: 1px solid black;
+  border: 1px solid dimgray;
   color: #fff;
+  line-height: 48px;
   font-size: 14px;
   cursor: pointer;
   margin-top: 40px;
