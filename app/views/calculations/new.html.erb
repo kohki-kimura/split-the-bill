@@ -16,7 +16,7 @@
    <%# フラッシュメッセージ %>
 
    <div class="calc-title-one">総数入力</div>
-   <div class="indispensable-description">※は必須項目です</div>
+   <div class="indispensable-description">※必須項目</div>
    <div class="total">
       <div class="total-payment">
         <span>総支払額</span>
@@ -31,7 +31,7 @@
     </div>
       <div class="calc-title-two">計算入力</div>
       <div class="calc-description">グループ2以降から数値を入力してください</div>
-      <div class="description">一人あたりの支払額は十の位で切り上げ、比率は小数点第二位で切り捨てを行なっています</div>
+      <div class="description">一人あたりの支払額：十の位で切り上げ<br>比率：小数点第二位で切り捨て<br></div>
     <%# 情報 %>
   
     <%= render 'shared/error_messages', model: f.object %>
