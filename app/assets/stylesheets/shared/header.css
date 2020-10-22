@@ -6,6 +6,7 @@
   padding: 2vh 15vw;
   display: flex;
   white-space: nowrap;
+  align-items: center;
 }
 
 .top-page-second-header {
@@ -30,6 +31,7 @@
   font-weight: bold;
   width: 100vw;
   padding-right: 80px;
+  padding-top: 10px;
   display: flex;
   justify-content: flex-end;
   white-space: nowrap;
@@ -70,11 +72,11 @@ a {
   }
   
   .user-nickname {
-    margin-right: 1.5vw;
+    margin-right: 3vw;
   }
   
   .data-save{
-    margin-right: 1.5vw;
+    margin-right: 3vw;
   }
   
   .login {

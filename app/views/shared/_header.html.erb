@@ -7,16 +7,16 @@
       <%= link_to image_tag("dentaku.png", class:"icon"),root_path,method: :get %>
     </div>
 
-    <ul class='lists'>
+    <div class='lists'>
       <%  if user_signed_in? %>
-        <li><%= link_to current_user.nickname, edit_user_path(current_user), class: "user-nickname" %> </li>
-        <li><%= link_to '保存履歴', calculations_path(current_user), class: "data-save" %> </li>
-        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %> </li>
+        <%= link_to current_user.nickname, edit_user_path(current_user), class: "user-nickname" %>
+        <%= link_to '保存履歴', calculations_path(current_user), class: "data-save" %>
+        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %> 
       <% else %>
-        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+        <%= link_to 'ログイン', new_user_session_path, class: "login" %>
+        <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
       <% end %>
-    </ul>
+    </div>
 
 
 </header>
