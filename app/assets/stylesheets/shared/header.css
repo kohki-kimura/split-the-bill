@@ -3,28 +3,23 @@
 }
 
 .top-page-header {
-  padding: 2vh 15vw;
+  padding: 2vh 0;
   display: flex;
   white-space: nowrap;
-}
-
-.top-page-second-header {
-  width: 100%;
-  padding: 2vh 15vw 3.6vh;
-  
 }
 
 .header-contents{
   white-space: nowrap;
   display: flex;
-  width: 100%;
+  width: 100vw;
+  min-width: 200px;
 }
 
 .app-name{
   color: black;
   font-weight: bold;
   font-size: 30px;
-  padding-left: 80px;
+  padding-left: 300px;
 }
 
 .icon {
@@ -35,7 +30,7 @@
   list-style: none;
   font-weight: bold;
   width: 100vw;
-  padding-right: 80px;
+  padding-right: 300px;
   padding-top: 2px;
   display: flex;
   justify-content: flex-end;
@@ -86,7 +81,6 @@ a {
   
   .login {
     margin-right: 3vw;
-
   }
 }
 
