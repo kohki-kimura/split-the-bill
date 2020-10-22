@@ -129,6 +129,7 @@
     font-size:11px;
     height: 35px;
     line-height: 12px;
+    width: 85%;
   }
 
   .form-group {
@@ -137,7 +138,8 @@
 
   .register-black-btn {
     height: 35px;
-    margin-top: 40px;
+    margin: 30px auto 0;
+    text-align: center;
   }
 
   .error-message{
