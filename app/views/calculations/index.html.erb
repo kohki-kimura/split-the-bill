@@ -6,9 +6,15 @@
   
   <%# 情報 %>
   <% if @calculations.length == 0 %>
+    <%= form_with url:root_path, method: :get, local: true do |f| %>
           <div class="calc-main-history">
-              <div class="calc-title-one">計算の履歴がありません</div>
+            <div class="calc-title-one">計算の履歴がありません</div>
+
+            <div class="btn-contents">
+              <%= f.submit "戻る",class:"black-btn" %>
+            </div>
           </div>
+    <%end%>
   <%end%>
   <% @calculations.each do |calculation|%>
 

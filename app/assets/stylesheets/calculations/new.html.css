@@ -29,6 +29,7 @@
   margin: 20vh 0 40vh;
   white-space: nowrap;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -218,6 +219,8 @@
   cursor: pointer;
   margin-top: 40px;
 }
+
+
 
 .black-btn:hover {
   background: dimgray;
