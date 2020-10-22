@@ -67,7 +67,6 @@
 
 .register-btn {
   width: 50%;
-  margin: 0 auto;
 }
 
 .register-black-btn {
@@ -119,10 +118,6 @@
 
 @media (max-width: 500px) {
 
-  body{
-    -webkit-text-size-adjust: 100%;
-  }
-
   .form-text {
     font-size: 10px;
     font-weight: bold;
@@ -142,6 +137,7 @@
 
   .register-black-btn {
     height: 35px;
+    width: 110%;
   }
 
   .error-message{
