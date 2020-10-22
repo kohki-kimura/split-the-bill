@@ -53,17 +53,17 @@
 
               <div class="group-text">
               <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-                <%= f.text_field :hoge, value:calculation.people_one, class:"group-input", readonly: true %>人
+                <%= f.text_field :hoge, value:calculation.people_one, class:"group-input-one", readonly: true %>人
               </div>
 
               <div class="group-text">
               <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-              <%= f.text_field :hoge, value:calculation.ratio_one, class:"group-input", readonly: true %>%
+              <%= f.text_field :hoge, value:calculation.ratio_one, class:"group-input-one", readonly: true %>%
               </div>
 
               <div class="group-text">
               <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-              <%= f.text_field :hoge, value:calculation.price_one, class:"group-input", id:"group-price-one", readonly: true %>円
+              <%= f.text_field :hoge, value:calculation.price_one, class:"group-input-one-price", id:"group-price-one", readonly: true %>円
               </div>
             </div>
 
@@ -88,7 +88,7 @@
 
               <div class="group-text">
               <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-              <%= f.text_field :hoge, value:calculation.price_two, class:"group-input", id:"group-price-one", readonly: true %>円
+              <%= f.text_field :hoge, value:calculation.price_two, class:"group-input-price", id:"group-price-one", readonly: true %>円
               </div>
             </div>
           <%# グループ２ %>
@@ -112,15 +112,15 @@
 
               <div class="group-text">
               <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-              <%= f.text_field :hoge, value:calculation.price_three, class:"group-input", readonly: true %>円
+              <%= f.text_field :hoge, value:calculation.price_three, class:"group-input-price", readonly: true %>円
               </div>
             </div>
           <%# グループ3 %>
 
           <%# あまり %>
-            <div class="group-invisible">
+            <div class="group-indivisible">
               <span class="indivisible-number">あまり</span>
-              <%= f.text_field :hoge, value:calculation.indivisible_number, class:"group-input", readonly: true %>円
+              <%= f.text_field :hoge, value:calculation.indivisible_number, class:"group-input-indivisible", readonly: true %>円
             </div>
           <%# あまり %>
       

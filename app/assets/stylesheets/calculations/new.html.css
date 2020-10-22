@@ -66,6 +66,8 @@
 .total-payment-input {
   width: 130px;
   height: 35px;
+  align-items: center;
+  text-align: right;
 }
 
 .total-people {
@@ -78,6 +80,7 @@
 .total-people-input {
   width: 130px;
   height: 35px;
+  text-align: right;
 }
 
 
@@ -125,19 +128,34 @@
 }
 
 .group-type {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 .group-input-name {
   width: 130px;
   height: 35px;
-  text-align: right;
+  text-align: left;
   padding-right: 10px;
 }
 
 .group-input-one {
+  width: 105px;
+  height: 35px;
+  text-align: right;
+  padding-right: 10px;
+  background-color: whitesmoke;
+}
+
+.group-input-indivisible {
+  width: 105px;
+  height: 35px;
+  text-align: right;
+  padding-right: 10px;
+  background-color: whitesmoke;
+}
+
+.group-input-one-price {
   width: 105px;
   height: 35px;
   text-align: right;
@@ -152,15 +170,23 @@
   padding-right: 10px;
 }
 
+.group-input-price {
+  width: 105px;
+  height: 35px;
+  text-align: right;
+  padding-right: 10px;
+}
 
-.group-invisible {
+
+.group-indivisible {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 33px;
 }
 
-.invisible-number{
+.indivisible-number{
+  text-align: right;
   width: 60px;
   padding: 10px 10px  10px 0;
 }
@@ -173,7 +199,8 @@
 }
 
 .black-btn {
-  width: 30%;
+  width: 20%;
+  height: 40px;
   background: black;
   border: 1px solid black;
   color: #fff;
@@ -195,7 +222,7 @@
 
   .calc-main {
     background-color: #FFF;
-    width: 90vw;
+    width: 95vw;
     padding: 10vh;
     margin: 0 0 10vh 0;
   }
@@ -214,7 +241,6 @@
 
   .group-type {
     white-space: nowrap;
-    padding:0 45px 0 30px;
   }
 
   .group-input-name {
@@ -236,7 +262,7 @@
     padding-right: 5px;
   }
 
-  .group-invisible {
+  .group-indivisible {
     justify-content: center;
   }
 }
@@ -303,31 +329,55 @@
   }
 
   .group {
-    padding: 0 10px 10px;
+    padding: 0 10px 0;
   }
+
+  /* .group-type {
+    font-size: 13px;
+    white-space: nowrap;
+    padding:0 18px 0 0;
+    line-height: 5px;
+  } */
 
   .group-type {
     font-size: 13px;
     white-space: nowrap;
-    padding:0 22px 0 8px;
-    line-height: 5px;
+    margin-top: 20px;
   }
   
+
   .group-input {
-    width:50px;
+    width:40px;
     padding-right: 10px;
     font-size: 10px;
   }
+
+  .group-input-price {
+    width: 70px;
+  }
+
+  .group-input::placeholder {
+    color: transparent;
+  }
+
+  .group-input-price::placeholder {
+    color: transparent;
+  }
+
   
   .group-input-one {
-    width: 50px;
+    width: 40px;
     padding-right: 10px;
     background-color: whitesmoke;
     font-size: 10px;
   }
+
+  .group-input-one-price {
+    width: 70px;
+  }
   
   .group-input-name {
-    width: 60px;
+    width: 70px;
     padding-right: 10px;
     font-size: 10px;
   }
@@ -336,16 +386,21 @@
     padding-right: 5px;
   }
 
-  .group-invisible {
+  .group-input-indivisible {
+    width: 70px;
+  }
+
+  .group-indivisible {
     padding-right: 0;
     justify-content: center;
   }
 
-  .invisible-number{
+  .indivisible-number{
     padding-right: 0;
   }
   
   .black-btn {
+    height: 30px;
     margin-top: 40px;
   }
 

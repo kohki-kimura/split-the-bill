@@ -5,11 +5,11 @@
 }
 
 .red-btn {
-  width: 30%;
+  width: 20%;
+  height: 40px;
   background: crimson;
   border: 1px solid crimson;
   color: #fff;
-  line-height: 48px;
   font-size: 14px;
   cursor: pointer;
   margin-top: 40px;
@@ -26,8 +26,8 @@
   }
 
   .red-btn {
-    line-height: 28px;
     margin-top: 40px;
+    height: 30px;
   }
 
 }
