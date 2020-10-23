@@ -1,10 +1,10 @@
 <%= render "shared/header" %>
 
-<div class="calc-contents">
-  <header class="calc-header">
+<div class="contents">
+  <header class="header">
   </header>
   <%# 情報 %>
-  <div class="calc-main">
+  <div class="main">
    <%= form_with model: @calculation, url:calculations_path, local: true do |f| %>
 
    <%# フラッシュメッセージ %>
@@ -15,7 +15,7 @@
     <% end %>
    <%# フラッシュメッセージ %>
 
-   <div class="calc-title-one">総数入力</div>
+   <div class="title-one">総数入力</div>
    <div class="indispensable-description">※必須項目</div>
    <div class="total">
       <div class="total-payment">
@@ -29,8 +29,8 @@
          <%= f.text_field :total_people, type:"number", class:"total-people-input", id:"total-people", placeholder:"例）10" %>人
       </div>
     </div>
-      <div class="calc-title-two">計算入力</div>
-      <div class="calc-description">グループ2以降から数値を入力してください</div>
+      <div class="title-two">計算入力</div>
+      <div class="description">グループ2以降から数値を入力してください</div>
       <div class="description">一人あたり：十の位で切り上げ<br>比率：小数点第二位で切り捨て<br></div>
     <%# 情報 %>
   
