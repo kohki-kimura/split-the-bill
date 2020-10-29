@@ -1,7 +1,7 @@
 # README
 
 
-# アプリケーション名
+## アプリケーション名
 warikan.com
 
 
@@ -58,18 +58,22 @@ https://warikan-com.herokuapp.com/
 
 ![計算機能](https://user-images.githubusercontent.com/70509887/97251586-83eea100-184b-11eb-8f7e-6504391c520a.gif)
 
+
 * ユーザー管理機能  
 新規登録・ログイン・ログアウト機能
 
 ![ユーザー管理機能](https://user-images.githubusercontent.com/70509887/97251598-881abe80-184b-11eb-9fb2-a68c2edf0b72.gif)
+
 
 * 計算保存機能  
 割り勘計算の結果を保存し、一覧表示や削除ができる機能（ログイン中のユーザーのみ利用可）
 
 ![計算保存機能](https://user-images.githubusercontent.com/70509887/97251632-98329e00-184b-11eb-8a46-1579481ab3d6.gif)
 
+
 * レスポンシブWebデザイン  
 スマートフォン・タブレット画面に対応
+
 ![レスポンシブWebデザイン](https://user-images.githubusercontent.com/70509887/97251639-99fc6180-184b-11eb-800e-03462b93044e.gif)
 
 
