@@ -15,7 +15,7 @@ https://warikan-com.herokuapp.com/
 テストID（１）：test@test  
 テストPASS（１）：test1234
 
-テストID（２）：test２@test  
+テストID（２）：test2@test  
 テストPASS（２）：test1234
 
 ## 利用方法
