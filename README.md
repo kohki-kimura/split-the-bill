@@ -75,7 +75,7 @@ https://warikan-com.herokuapp.com/
 1. ヘッダーの「保存履歴」押下で、保存した計算結果を一覧表示(履歴がない場合、その旨を表示)
 1. 履歴下部の「削除」押下で、計算結果を削除
 
-![計算保存機能](https://user-images.githubusercontent.com/70509887/97251632-98329e00-184b-11eb-8a46-1579481ab3d6.gif)
+![計算保存機能](https://user-images.githubusercontent.com/70509887/99079475-5ce1ee80-2603-11eb-8801-b54938ec16fe.gif)
 
 
 * **レスポンシブWebデザイン**  
