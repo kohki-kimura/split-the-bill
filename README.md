@@ -50,7 +50,7 @@ https://warikan-com.herokuapp.com/
 ![ER図](https://user-images.githubusercontent.com/70509887/95564074-3b687280-0a59-11eb-871a-3606ce9daf35.png)
 
 ## 実装した機能
-# **計算機能**  
+### **計算機能**  
 立場、役割ごとに支払額か比率を入力して、割り勘計算ができる機能  
 1. 総額・総支払額を入力する  
 1. グループ２以降から人数と一人当たりの支払額or比率を入力していく  
@@ -59,7 +59,7 @@ https://warikan-com.herokuapp.com/
 ![計算機能](https://user-images.githubusercontent.com/70509887/97251586-83eea100-184b-11eb-8f7e-6504391c520a.gif)
 
 
-# **ユーザー管理機能**  
+### **ユーザー管理機能**  
 新規登録・ログイン・ログアウト機能
 
 **新規登録機能**
@@ -80,7 +80,7 @@ https://warikan-com.herokuapp.com/
 ![ユーザー管理機能](https://user-images.githubusercontent.com/70509887/97251598-881abe80-184b-11eb-9fb2-a68c2edf0b72.gif)
 
 
-# **計算保存機能**  
+### **計算保存機能**  
 割り勘計算の結果を保存し、一覧表示や削除ができる機能（ログイン中のユーザーのみ利用可）
 1. フォームを入力する  
 1. フォーム下部の「保存する」を押下して、計算結果を保存
@@ -90,7 +90,7 @@ https://warikan-com.herokuapp.com/
 ![計算保存機能](https://user-images.githubusercontent.com/70509887/99079475-5ce1ee80-2603-11eb-8801-b54938ec16fe.gif)
 
 
-# **レスポンシブWebデザイン**  
+### **レスポンシブWebデザイン**  
 スマートフォン・タブレット画面に対応
 
 ![レスポンシブWebデザイン](https://user-images.githubusercontent.com/70509887/97251639-99fc6180-184b-11eb-800e-03462b93044e.gif)
