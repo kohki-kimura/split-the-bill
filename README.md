@@ -11,6 +11,10 @@ warikan.com(割り勘ドットコム)
 ## URL
 https://warikan-com.herokuapp.com/
 
+## BASIC認証
+ユーザーID:admin
+PASS:2222
+
 ## テスト用アカウント
 テストID（１）：test@test  
 テストPASS（１）：test1234
