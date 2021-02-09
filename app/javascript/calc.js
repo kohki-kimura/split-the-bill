@@ -50,7 +50,7 @@ function calc(){
       indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
     }
   });
-  // のフォームを押した時のイベント発火
+  // 総支払額のフォームを押した時のイベント発火
 
 
   // 総人数のフォームを押した時のイベント発火
