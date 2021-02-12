@@ -1,7 +1,7 @@
 function calc(){
   // railsのビューファイルから、各入力・出力フォームのIDを取得
-  const total_people = document.getElementById("total-people");                       // 総人数 ID取得
-  const total_payment = document.getElementById("total-payment");                     // 総支払額 ID取得
+  const total_people = document.getElementById("total-people");                       // 総人数(ID取得)
+  const total_payment = document.getElementById("total-payment");                     // 総支払額(ID取得)
   
   
   const group_people_one = document.getElementById("group-people-one");               // グループ１の人数(ID取得)
