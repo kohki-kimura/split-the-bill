@@ -3,7 +3,7 @@ ja:
     attributes:
         email: Eメール
         password: パスワード
-        nickname: ニックネーム
+        Nickname: ニックネーム
     attributes:
       calculation:
         total_payment: 総支払額
