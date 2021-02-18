@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2020_10_16_060445) do
     t.float "ratio_three"
     t.integer "price_three"
     t.integer "indivisible_number", null: false
+    t.text "memo"
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

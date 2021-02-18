@@ -20,6 +20,8 @@ class CreateCalculations < ActiveRecord::Migration[6.0]
       t.integer :price_three
 
       t.integer :indivisible_number, null: false
+
+      t.text :memo
       
       t.integer :user_id,    null: false,foreign_key: true
       t.timestamps
