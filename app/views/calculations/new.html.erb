@@ -7,142 +7,150 @@
   <div class="main">
    <%= form_with model: @calculation, url:calculations_path, local: true do |f| %>
 
-   <%# フラッシュメッセージ %>
-   <% flash.each do |key, value| %>
-      <div class="flash">
-        <%= value %>
-      </div>
-    <% end %>
-   <%# フラッシュメッセージ %>
+      <%# フラッシュメッセージ %>
+      <% flash.each do |key, value| %>
+       <div class="flash">
+          <%= value %>
+       </div>
+      <% end %>
+      <%# フラッシュメッセージ %>
 
-   <div class="title-one">総数入力</div>
-   <div class="indispensable-description">※必須項目</div>
-   <div class="total">
-      <div class="total-payment">
-        <span>総支払額</span>
-        <span class="indispensable">※</span>
-         <%= f.text_field :total_payment, type:"number", class:"total-payment-input", id:"total-payment", placeholder:"例）50000" %>円
+      <div class="title-one">総数入力</div>
+      <div class="indispensable-description">※必須項目</div>
+      <div class="total">
+        <div class="total-payment">
+          <span>総支払額</span>
+          <span class="indispensable">※</span>
+          <%= f.text_field :total_payment, type:"number", class:"total-payment-input", id:"total-payment", placeholder:"例）50000" %>円
+        </div>
+        <div class="total-people">
+          <span>総人数</span>
+          <span class="indispensable">※</span>
+          <%= f.text_field :total_people, type:"number", class:"total-people-input", id:"total-people", placeholder:"例）10" %>人
+        </div>
       </div>
-      <div class="total-people">
-        <span>総人数</span>
-        <span class="indispensable">※</span>
-         <%= f.text_field :total_people, type:"number", class:"total-people-input", id:"total-people", placeholder:"例）10" %>人
-      </div>
-    </div>
-      <div class="title-two">計算入力</div>
-      <div class="description">グループ2以降から数値を入力してください</div>
-      <div class="description">一人あたり：十の位で切り上げ<br>比率：小数点第二位で切り捨て<br></div>
-    <%# 情報 %>
-  
-    <%= render 'shared/error_messages', model: f.object %>
-  
-    <%# 計算 %>
+        <div class="title-two">計算入力</div>
+        <div class="description">グループ2以降から数値を入力してください。<br>（グループ１には残りの値が自動で表示されます。）<br></div>
+        <div class="description">一人あたり：十の位で切り上げ<br>比率：小数点第二位で切り捨て<br></div>
+      <%# 情報 %>
+    
+      <%= render 'shared/error_messages', model: f.object %>
+    
+      <%# 計算 %>
 
-    <%# グループ１ %>
-   
-      <div class="group">
-        <div>
-          <div class="group-type">
-            <span>グループ名</span>
+      <%# グループ１ %>
+    
+        <div class="group">
+          <div>
+            <div class="group-type">
+              <span>グループ名</span>
+            </div>
+            
+            <div class="group-text">
+              <span class="group-name"></span>
+              <%= f.text_field :group_name_one, class:"group-input-name", id:"group-name-one", placeholder:"グループ１" %>
+            </div>
           </div>
-          
-          <div class="group-text">
-            <span class="group-name"></span>
-            <%= f.text_field :group_name_one, class:"group-input-name", id:"group-name-one", placeholder:"グループ１" %>
+
+          <div>
+            <div class="group-type">
+              <span>人数</span>
+            </div>
+            <div class="group-text">
+              <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
+              <%= f.text_field :people_one, type:"number", class:"group-input-one", id:"group-people-one", readonly: true %>人
+            </div>
+          </div>
+
+          <div>
+            <div class="group-type">
+              <span>比率</span>
+            </div>
+            <div class="group-text">
+            <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
+            <%= f.text_field :ratio_one, type:"decimal", class:"group-input-one", id:"group-ratio-one", readonly: true %>%
+            </div>
+          </div>
+
+          <div>
+            <div class="group-type">
+              <span>一人あたり</span>
+            </div>
+            <div class="group-text">
+            <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
+            <%= f.text_field :price_one, type:"number", class:"group-input-one-price", id:"group-price-one", readonly: true %>円
+            </div>
           </div>
         </div>
 
-        <div>
-          <div class="group-type">
-            <span>人数</span>
+      <%# グループ１ %>
+
+      <%# グループ2 %>
+        <div class="group">
+          <div class="group-text">
+            <%= f.text_field :group_name_two, class:"group-input-name", id:"group-name-two", placeholder:"グループ２" %>
           </div>
+
+          <div class="group-text">
+            <span class="indispensable">※</span>
+            <%= f.text_field :people_two, type:"number", class:"group-input", id:"group-people-two", placeholder:"例）1" %>人
+          </div>
+
+          <div class="group-text">
+            <span class="indispensable">※</span>
+            <%= f.text_field :ratio_two, type:"decimal", class:"group-input", id:"group-ratio-two" ,placeholder:"例）10" %>%
+          </div>
+
+          <div class="group-text">
+            <span class="indispensable">※</span>
+            <%= f.text_field :price_two, type:"number", class:"group-input-price", id:"group-price-two", placeholder:"例）10000" %>円
+          </div>
+        </div>
+      <%# グループ２ %>
+
+      <%# グループ3 %>
+        <div class="group">
+          <div class="group-text">
+            <%= f.text_field :group_name_three, class:"group-input-name", id:"group-name-three", placeholder:"グループ3" %>
+          </div>
+
           <div class="group-text">
             <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-            <%= f.text_field :people_one, type:"number", class:"group-input-one", id:"group-people-one", readonly: true %>人
+            <%= f.text_field :people_three, type:"number", class:"group-input", id:"group-people-three", placeholder:"例）1" %>人
           </div>
-        </div>
 
-        <div>
-          <div class="group-type">
-            <span>比率</span>
-          </div>
           <div class="group-text">
-          <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-          <%= f.text_field :ratio_one, type:"decimal", class:"group-input-one", id:"group-ratio-one", readonly: true %>%
+            <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
+            <%= f.text_field :ratio_three, type:"decimal", class:"group-input", id:"group-ratio-three", placeholder:"例）10" %>%
           </div>
-        </div>
-
-        <div>
-          <div class="group-type">
-            <span>一人あたり</span>
-          </div>
+          
+          
           <div class="group-text">
-          <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-          <%= f.text_field :price_one, type:"number", class:"group-input-one-price", id:"group-price-one", readonly: true %>円
+            <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
+            <%= f.text_field :price_three, type:"number", class:"group-input-price", id:"group-price-three", placeholder:"例）10000" %>円
           </div>
         </div>
+      <%# グループ3 %>
+
+      <%# あまり %>
+        <div class="group-indivisible">
+          <span class="indivisible-number">あまり</span>
+          <%= f.text_field :indivisible_number, type:"number", class:"group-input-indivisible", id:"indivisible-number", readonly: true%>円
+        </div>
+      <%# あまり %>
+
+      <div class="group-type">
+          <span>メモ</span>
+        </div>
+      <div class="group-text">
+        <%= f.text_area :hoge, class:"#", class:"memo",id:"#" ,placeholder:"支払額を分けた理由、一人ひとりの個人名、お金の貸し借りについてなど"%>
       </div>
+    
+      <%# 計算 %>
 
-    <%# グループ１ %>
-
-    <%# グループ2 %>
-      <div class="group">
-        <div class="group-text">
-          <%= f.text_field :group_name_two, class:"group-input-name", id:"group-name-two", placeholder:"グループ２" %>
-        </div>
-
-        <div class="group-text">
-          <span class="indispensable">※</span>
-          <%= f.text_field :people_two, type:"number", class:"group-input", id:"group-people-two", placeholder:"例）1" %>人
-        </div>
-
-        <div class="group-text">
-          <span class="indispensable">※</span>
-          <%= f.text_field :ratio_two, type:"decimal", class:"group-input", id:"group-ratio-two" ,placeholder:"例）10" %>%
-        </div>
-
-        <div class="group-text">
-          <span class="indispensable">※</span>
-          <%= f.text_field :price_two, type:"number", class:"group-input-price", id:"group-price-two", placeholder:"例）10000" %>円
-        </div>
+      <div class="btn-contents">
+        <%= f.submit "保存",class:"black-btn" %>
       </div>
-    <%# グループ２ %>
-
-    <%# グループ3 %>
-      <div class="group">
-        <div class="group-text">
-          <%= f.text_field :group_name_three, class:"group-input-name", id:"group-name-three", placeholder:"グループ3" %>
-        </div>
-
-        <div class="group-text">
-          <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-          <%= f.text_field :people_three, type:"number", class:"group-input", id:"group-people-three", placeholder:"例）1" %>人
-        </div>
-
-        <div class="group-text">
-          <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-          <%= f.text_field :ratio_three, type:"decimal", class:"group-input", id:"group-ratio-three", placeholder:"例）10" %>%
-        </div>
-        
-        
-        <div class="group-text">
-          <span class="indispensable">&nbsp;&nbsp;&nbsp;</span>
-          <%= f.text_field :price_three, type:"number", class:"group-input-price", id:"group-price-three", placeholder:"例）10000" %>円
-        </div>
-      </div>
-    <%# グループ3 %>
-
-    <%# あまり %>
-      <div class="group-indivisible">
-         <span class="indivisible-number">あまり</span>
-         <%= f.text_field :indivisible_number, type:"number", class:"group-input-indivisible", id:"indivisible-number", readonly: true%>円
-      </div>
-    <%# あまり %>
-  
-    <%# 計算 %>
-
-    <div class="btn-contents">
-      <%= f.submit "保存",class:"black-btn" %>
-    </div>
-  <% end %>
+   <% end %>
+  </div>
 </div>

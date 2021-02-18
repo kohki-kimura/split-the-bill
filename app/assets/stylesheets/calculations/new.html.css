@@ -201,6 +201,11 @@
 
 /* /計算 */
 
+.memo {
+  height: 80%;
+  width: 80%;
+}
+
 .btn-contents {
   display: flex;
   justify-content: center;
