@@ -20,7 +20,7 @@ function calc(){
   // railsのビューファイルから、各入力・出力フォームのIDを取得
 
   // 総支払額のフォームを押した時のイベント発火
-  total_payment.addEventListener('input', () => {
+  total_payment.addEventListener('keyup', () => {
     if(total_payment.value){
       let people_value = total_people.value;                    // 総人数
       let payment_value = total_payment.value;                  // 総支払額
@@ -54,7 +54,7 @@ function calc(){
 
 
   // 総人数のフォームを押した時のイベント発火
-  total_people.addEventListener('input', () => {
+  total_people.addEventListener('keyup', () => {
     if(total_people.value){
       let people_value = total_people.value;                    // 総人数
       let payment_value = total_payment.value;                  // 総支払額
@@ -88,7 +88,7 @@ function calc(){
 
 
   // グループ2 人数のフォームを押した時のイベント発火
-  group_people_two.addEventListener('input', () => {
+  group_people_two.addEventListener('keyup', () => {
     if(group_people_two.value){
       let people_value = total_people.value;                    // 総人数
       let payment_value = total_payment.value;                  // 総支払額
@@ -122,7 +122,7 @@ function calc(){
 
 
   // グループ2 支払額のフォームを押した時のイベント発火
-  group_price_two.addEventListener('input', () => {
+  group_price_two.addEventListener('keyup', () => {
     if(group_price_two.value){
       let people_value = total_people.value;                    // 総人数
       let payment_value = total_payment.value;                  // 総支払額
@@ -156,7 +156,7 @@ function calc(){
 
 
   // グループ3 人数のフォームを押した時のイベント発火
-  group_people_three.addEventListener('input', () => {
+  group_people_three.addEventListener('keyup', () => {
     if(group_people_three.value){
       let people_value = total_people.value;                    // 総人数
       let payment_value = total_payment.value;                  // 総支払額
@@ -189,7 +189,7 @@ function calc(){
   // グループ3 人数のフォームを押した時のイベント発火
 
   // グループ3 支払額のフォームを押した時のイベント発火
-  group_price_three.addEventListener('input', () => {
+  group_price_three.addEventListener('keyup', () => {
     if(group_price_three.value){
       let people_value = total_people.value;                    // 総人数
       let payment_value = total_payment.value;                  // 総支払額
@@ -259,8 +259,8 @@ function calc(){
   // });
   // グループ2 比率のフォームを押した時のイベント発火(keyup)
 
-  // グループ2 比率のフォームを押した時のイベント発火(input)
-  group_ratio_two.addEventListener('input', () => {
+  // グループ2 比率のフォームを押した時のイベント発火(keyup)
+  group_ratio_two.addEventListener('keyup', () => {
     let people_value = isNaN(total_people.value) ? 0 : Number(total_people.value);                    // 総人数
     let payment_value = isNaN(total_payment.value) ? 0 : Number(total_payment.value);                 // 総支払額
     let people_two_value = isNaN(group_people_two.value) ? 0 : Number(group_people_two.value);        // グループ2の人数
@@ -275,9 +275,9 @@ function calc(){
       let people = people_value - people_two_value - people_three_value;
       group_people_one.value = people;                                                            // グループ1の人数(表示)
 
-      // let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
-      // let payment_cell = Math.ceil(payment/100)*100;
-      // group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
+      let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
+      let payment_cell = Math.ceil(payment/100)*100;
+      group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
       let ratio_two = ((ratio_two_value / 100) * payment_value) / people_two_value;
       let ratio_cell_two = Math.ceil(ratio_two/100)*100;
@@ -295,7 +295,7 @@ function calc(){
       indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
     }
   });
-  // グループ2 比率のフォームを押した時のイベント発火(input)
+  // グループ2 比率のフォームを押した時のイベント発火(keyup)
 
   // グループ3 比率のフォームを押した時のイベント発火(keyup)
   // group_ratio_three.addEventListener('keyup', () => {
@@ -335,8 +335,8 @@ function calc(){
   // });
   // グループ3 比率のフォームを押した時のイベント発火(keyup)
 
-  // グループ3 比率のフォームを押した時のイベント発火(input)
-  group_ratio_three.addEventListener('input', () => {
+  // グループ3 比率のフォームを押した時のイベント発火(keyup)
+  group_ratio_three.addEventListener('keyup', () => {
     let people_value = isNaN(total_people.value) ? 0 : Number(total_people.value);                    // 総人数
     let payment_value = isNaN(total_payment.value) ? 0 : Number(total_payment.value);                 // 総支払額
     let people_two_value = isNaN(group_people_two.value) ? 0 : Number(group_people_two.value);        // グループ2の人数
@@ -371,7 +371,7 @@ function calc(){
     indivisible_number.value =  (formula - payment_value);                                      // あまり(表示)
     }
   });
-  // グループ3 比率のフォームを押した時のイベント発火(input)
+  // グループ3 比率のフォームを押した時のイベント発火(keyup)
 
   
  
