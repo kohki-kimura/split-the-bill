@@ -275,9 +275,9 @@ function calc(){
       let people = people_value - people_two_value - people_three_value;
       group_people_one.value = people;                                                            // グループ1の人数(表示)
 
-      let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
-      let payment_cell = Math.ceil(payment/100)*100;
-      group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
+      // let payment = (payment_value - ((price_two_value * people_two_value) + (price_three_value * people_three_value))) / people;
+      // let payment_cell = Math.ceil(payment/100)*100;
+      // group_price_one.value =  payment_cell;                                                      // グループ1の支払額(表示)
 
       let ratio_two = ((ratio_two_value / 100) * payment_value) / people_two_value;
       let ratio_cell_two = Math.ceil(ratio_two/100)*100;
