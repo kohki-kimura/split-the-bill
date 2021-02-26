@@ -93,7 +93,7 @@ PASS:2222 -->
 ![計算保存機能](https://user-images.githubusercontent.com/70509887/99079475-5ce1ee80-2603-11eb-8801-b54938ec16fe.gif)
 
 ### **レスポンシブWebデザイン**  
-スマートフォンとタブレット画面にそれぞれ対応
+スマートフォンとタブレットの画面にそれぞれ対応
 
 
 ![レスポンシブWebデザイン](https://user-images.githubusercontent.com/70509887/97251639-99fc6180-184b-11eb-800e-03462b93044e.gif)
