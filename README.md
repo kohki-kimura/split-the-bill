@@ -13,7 +13,7 @@ https://warikan-com.herokuapp.com/
 ## BASIC認証
 <!-- ユーザーID:admin  
 PASS:2222 -->
-採用担当の方々にスムーズにご確認いただけるよう、現在BASIC認証は外しております。
+採用担当の方々にスムーズにご確認いただけるように、現在BASIC認証は外しております。
 
 ## テスト用アカウント
 テストID（１）：test@test  
