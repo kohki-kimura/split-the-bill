@@ -154,7 +154,6 @@ function calc(){
   });
   // グループ2 支払額のフォームを押した時のイベント発火
 
-
   // グループ3 人数のフォームを押した時のイベント発火
   group_people_three.addEventListener('input', () => {
     if(group_people_three.value){
