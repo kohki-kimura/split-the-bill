@@ -1,6 +1,5 @@
 # README
 
-
 ## アプリケーション名
 warikan.com(割り勘ドットコム)
 
